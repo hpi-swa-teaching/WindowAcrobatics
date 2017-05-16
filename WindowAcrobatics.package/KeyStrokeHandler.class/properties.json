@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"keyBindings" ],
+	"name" : "KeyStrokeHandler",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "normal" }

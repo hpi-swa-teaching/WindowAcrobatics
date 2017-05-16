@@ -1,1 +1,3 @@
-OrderedDictionary { }
+OrderedDictionary {
+	'WindowAcrobatics.package' : #SquotCypressCodeSerializer
+}

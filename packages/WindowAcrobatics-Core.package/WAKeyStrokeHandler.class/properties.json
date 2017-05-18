@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"keyBindings" ],
+	"name" : "WAKeyStrokeHandler",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "normal" }

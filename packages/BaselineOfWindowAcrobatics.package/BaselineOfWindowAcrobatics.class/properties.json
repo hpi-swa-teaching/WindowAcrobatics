@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfWindowAcrobatics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfWindowAcrobatics",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

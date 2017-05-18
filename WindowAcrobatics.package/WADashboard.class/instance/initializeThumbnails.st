@@ -5,8 +5,7 @@ initializeThumbnails
 	windows := ActiveWorld submorphs select: [:m | m isSystemWindow].
 	
 	windows do: [:wnd |
-		| thumbnail | wnd isActive: false.
-		wnd lookUnfocused.
+		| thumbnail | wnd passivate.
 		wnd hasDropShadow in: [:oldShadowValue |
 			wnd hasDropShadow: false.
 			[thumbnail := wnd imageForm]

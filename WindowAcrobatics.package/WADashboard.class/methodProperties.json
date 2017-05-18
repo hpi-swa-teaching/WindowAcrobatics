@@ -2,13 +2,13 @@
 	"class" : {
 		"open" : "jh 5/16/2017 12:27" },
 	"instance" : {
-		"activateWindow" : "jh 5/16/2017 12:13",
+		"activateWindow" : "adz 5/18/2017 10:13",
 		"activateWindowFromEvent:thumbnail:" : "jh 5/16/2017 12:13",
 		"closeWindow" : "jh 5/16/2017 12:13",
 		"drawOn:" : "jh 5/16/2017 12:13",
 		"initialize" : "jh 5/16/2017 12:13",
-		"initializeSelectionRectangle" : "jh 5/16/2017 12:13",
-		"initializeThumbnails" : "jh 5/16/2017 12:13",
+		"initializeSelectionRectangle" : "adz 5/18/2017 10:02",
+		"initializeThumbnails" : "adz 5/18/2017 10:23",
 		"intoWorld:" : "jh 5/16/2017 12:13",
 		"selectNextWindow" : "jh 5/16/2017 12:13",
 		"selectPreviousWindow" : "jh 5/16/2017 12:13",

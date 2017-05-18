@@ -7,5 +7,10 @@ SmalltalkCISpec {
       #load : [ 'tests' ],
       #useLatestMetacello : true
     }
-  ]
+  ],
+  #testing: {
+    #coverage : {
+      #categories : [ 'WindowAcrobatics' ]
+    }
+  }
 }

@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : ‚WindowAcrobatics‘,
+      #baseline : 'WindowAcrobatics',
       #directory : 'packages',
       #platforms : [ #squeak ],
       #load : [ 'tests' ],

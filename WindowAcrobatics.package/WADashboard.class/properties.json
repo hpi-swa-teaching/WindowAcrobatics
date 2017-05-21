@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectionRectangle" ],
+	"name" : "WADashboard",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,14 +1,14 @@
 {
-	"category" : "WindowAcrobatics-Core",
+	"category" : "WindowAcrobatics-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"keyBindings" ],
-	"name" : "WAKeyStrokeHandler",
+		 ],
+	"name" : "WATestKeyStrokeEventDashBoard",
 	"pools" : [
 		 ],
-	"super" : "RectangleMorph",
+	"super" : "Object",
 	"type" : "normal" }

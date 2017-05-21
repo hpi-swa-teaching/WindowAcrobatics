@@ -1,4 +1,5 @@
 OrderedDictionary {
+	'\/WindowAcrobatics.package' : #SquotCypressCodeSerializer,
 	'packages\/BaselineOfWindowAcrobatics.package' : #SquotCypressCodeSerializer,
 	'packages\/WindowAcrobatics-Core.package' : #SquotCypressCodeSerializer,
 	'packages\/WindowAcrobatics-Tests.package' : #SquotCypressCodeSerializer

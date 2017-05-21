@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WATestKeyStrokeEvent",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

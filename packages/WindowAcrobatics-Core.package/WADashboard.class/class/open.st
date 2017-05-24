@@ -1,5 +1,5 @@
 as yet unclassified
 open
-	
-	self new openInWorld.
-	
+	self allInstances size = 0 ifTrue: [
+				self new openInWorld.
+		]

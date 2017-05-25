@@ -3,6 +3,7 @@
 		"open" : "jh 5/24/2017 13:34" },
 	"instance" : {
 		"activateWindow" : "adz 5/18/2017 10:13",
+		"activateWindowAndClose" : "AZ 5/25/2017 15:59",
 		"activateWindowFromEvent:thumbnail:" : "adz 5/18/2017 10:38",
 		"closeWindow" : "jh 5/16/2017 12:13",
 		"drawOn:" : "jh 5/16/2017 12:13",
@@ -11,7 +12,7 @@
 		"initializeThumbnails" : "adz 5/18/2017 10:33",
 		"intoWorld:" : "jh 5/16/2017 12:13",
 		"keyDown:" : "AZ 5/25/2017 15:40",
-		"keyUp:" : "AZ 5/25/2017 15:51",
+		"keyUp:" : "AZ 5/25/2017 15:59",
 		"selectNextWindow" : "jh 5/16/2017 12:13",
 		"selectPreviousWindow" : "jh 5/16/2017 12:13",
 		"selectWindow:" : "jh 5/16/2017 12:13",

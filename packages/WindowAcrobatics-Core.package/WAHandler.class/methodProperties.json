@@ -1,6 +1,27 @@
 {
 	"class" : {
-		"KeyBindings" : "adz 6/1/2017 10:43",
-		"KeyBindings:" : "adz 6/1/2017 10:57" },
+		"activateAlignment" : "jh 6/1/2017 16:13",
+		"activateAlignment:" : "jh 6/1/2017 16:15",
+		"activateDashboard" : "jh 6/1/2017 16:10",
+		"activateDashboard:" : "jh 6/1/2017 16:15",
+		"alignBottomKey" : "jh 6/1/2017 14:37",
+		"alignBottomKey:" : "jh 6/1/2017 16:01",
+		"alignLeftKey" : "jh 6/1/2017 12:08",
+		"alignLeftKey:" : "jh 6/1/2017 16:01",
+		"alignRightKey" : "jh 6/1/2017 14:35",
+		"alignRightKey:" : "jh 6/1/2017 16:01",
+		"alignTopKey" : "jh 6/1/2017 14:36",
+		"alignTopKey:" : "jh 6/1/2017 16:01",
+		"alignmentActive" : "jh 6/1/2017 16:07",
+		"alignmentActive:" : "jh 6/1/2017 16:07",
+		"dashboardActive" : "jh 6/1/2017 16:07",
+		"dashboardActive:" : "jh 6/1/2017 16:07",
+		"defaultKeybindings" : "jh 6/1/2017 16:27",
+		"descriptionToActionBindings" : "jh 6/1/2017 15:01",
+		"handleEvent:" : "jh 6/1/2017 16:27",
+		"keyToDescriptionBindings" : "jh 6/1/2017 16:05",
+		"keyToDescriptionBindings:" : "jh 6/1/2017 15:34",
+		"openDashboardKey" : "jh 6/1/2017 15:21",
+		"openDashboardKey:" : "jh 6/1/2017 16:03" },
 	"instance" : {
-		"handleEvent:" : "adz 6/1/2017 10:12" } }
+		 } }

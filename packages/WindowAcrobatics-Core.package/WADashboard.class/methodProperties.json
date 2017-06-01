@@ -1,5 +1,9 @@
 {
 	"class" : {
+		"activateWindowAcrobatics" : "jh 6/1/2017 10:39",
+		"activateWindowAcrobatics:" : "jh 6/1/2017 10:32",
+		"activationString" : "jh 6/1/2017 10:36",
+		"activationString:" : "jh 6/1/2017 10:37",
 		"open" : "AZ 6/1/2017 09:51" },
 	"instance" : {
 		"activateWindow" : "adz 5/18/2017 10:13",
@@ -10,6 +14,8 @@
 		"initialize" : "jh 5/30/2017 10:59",
 		"initializeSelectionRectangle" : "adz 5/18/2017 10:02",
 		"initializeThumbnails" : "adz 5/18/2017 10:33",
+		"instance" : "jh 5/30/2017 13:07",
+		"instance:" : "jh 5/30/2017 13:07",
 		"intoWorld:" : "jh 5/16/2017 12:13",
 		"keyDown:" : "jh 5/30/2017 11:01",
 		"keyUp:" : "AZ 6/1/2017 10:36",

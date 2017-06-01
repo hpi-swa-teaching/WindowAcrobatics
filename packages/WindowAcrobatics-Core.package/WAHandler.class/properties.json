@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"KeyBindings" ],
+		"DescriptionToActionBindings",
+		"KeyToDescriptionBindings" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

@@ -1,6 +1,11 @@
 {
 	"class" : {
-		"KeyBindings" : "adz 6/1/2017 10:43",
-		"KeyBindings:" : "adz 6/1/2017 10:57" },
+		"alignLeftKey" : "jh 6/1/2017 12:08",
+		"alignLeftKey:" : "jh 6/1/2017 11:29",
+		"descriptionToActionBindings" : "jh 6/1/2017 11:58",
+		"handleEvent:" : "jh 6/1/2017 12:12",
+		"keyToDescriptionBindings" : "jh 6/1/2017 12:09",
+		"keyToDescriptionBindings:" : "jh 6/1/2017 11:23",
+		"open" : "jh 6/1/2017 11:32" },
 	"instance" : {
 		"handleEvent:" : "adz 6/1/2017 10:12" } }

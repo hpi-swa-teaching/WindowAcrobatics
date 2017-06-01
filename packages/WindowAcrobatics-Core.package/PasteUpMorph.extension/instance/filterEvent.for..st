@@ -9,6 +9,10 @@ filterEvent: aKeyboardEvent for: anObject
 	
 	aKeyboardEvent isKeystroke
 		ifFalse: [^ aKeyboardEvent].
+		
+	aKeyboardEvent commandKeyPressed ifTrue: [
+		(WAHandler handleEvent: aKeyboardEvent) value.
+		].
  
 	aKeyboardEvent commandKeyPressed ifTrue: [
 		aKeyboardEvent keyCharacter caseOf: {
@@ -26,7 +30,7 @@ filterEvent: aKeyboardEvent for: anObject
 			[$q] -> [RectangleMorph new openInWorld].
 			[$l] ->[[ :windows | windows ifNotEmpty: [ (windows at: 1) position: (World extent x / 2) asInteger @18; extent: (World extent x/ 2) asInteger @(World extent y - 18)]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).].
 			[$k] ->[[ :windows | windows ifNotEmpty: [ (windows at: 1)  position: 0@(World extent y / 2) asInteger; extent: (World extent x)@(World extent y / 2) asInteger ]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).].	
-			[$j] -> [[ :windows | windows ifNotEmpty: [ (windows at: 1) position: 0@18; extent: (World extent x / 2) asInteger @(World extent y - 18)]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).].
+			"[$j] -> [[ :windows | windows ifNotEmpty: [ (windows at: 1) position: 0@18; extent: (World extent x / 2) asInteger @(World extent y - 18)]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).]."
 		
 			[$i] ->  [[ :windows | windows ifNotEmpty: [ (windows at: 1) position: 0@18; extent: (World extent x)@(World extent y / 2) asInteger ]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).].
 		} otherwise: [^ aKeyboardEvent "no hit"].

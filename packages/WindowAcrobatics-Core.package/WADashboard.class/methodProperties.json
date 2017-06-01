@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"open" : "jh 6/1/2017 15:37" },
+		"hasDashboard" : "AZ 6/1/2017 22:40",
+		"hasDashboard:" : "AZ 6/1/2017 22:37",
+		"open" : "AZ 6/1/2017 22:38" },
 	"instance" : {
 		"activateWindow" : "adz 5/18/2017 10:13",
 		"activateWindowAndClose" : "AZ 5/25/2017 15:59",
@@ -14,7 +16,7 @@
 		"instance:" : "jh 5/30/2017 13:07",
 		"intoWorld:" : "jh 5/16/2017 12:13",
 		"keyDown:" : "jh 5/30/2017 11:01",
-		"keyUp:" : "jh 6/1/2017 15:53",
+		"keyUp:" : "AZ 6/1/2017 22:39",
 		"scroll" : "jh 5/30/2017 10:58",
 		"scrollingDirection" : "jh 5/30/2017 10:57",
 		"scrollingDirection:" : "jh 5/30/2017 10:57",

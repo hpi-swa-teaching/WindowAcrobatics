@@ -1,4 +1,6 @@
-as yet unclassified
+handling
 handleEvent: aKeyboardEvent
 
-	^ self descriptionToActionBindings at: (self keyToDescriptionBindings at: aKeyboardEvent keyString) ifAbsent: [ [aKeyboardEvent]]
+	(self descriptionToActionBindings at: (self keyToDescriptionBindings at: aKeyboardEvent keyString ifAbsent: [^ false])) value.
+	
+	^ true

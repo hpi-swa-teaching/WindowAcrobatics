@@ -3,6 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AlignmentActive",
+		"DashboardActive",
 		"DescriptionToActionBindings",
 		"KeyToDescriptionBindings" ],
 	"commentStamp" : "",

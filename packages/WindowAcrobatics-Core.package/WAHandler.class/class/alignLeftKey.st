@@ -1,4 +1,4 @@
-as yet unclassified
+preferences
 alignLeftKey
 	<preference: 'Aligns window left'
 		category: #WindowAcrobatics

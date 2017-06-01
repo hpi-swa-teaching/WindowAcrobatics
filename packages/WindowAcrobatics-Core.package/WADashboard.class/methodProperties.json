@@ -1,10 +1,6 @@
 {
 	"class" : {
-		"activateWindowAcrobatics" : "jh 6/1/2017 10:39",
-		"activateWindowAcrobatics:" : "jh 6/1/2017 10:32",
-		"activationString" : "jh 6/1/2017 10:36",
-		"activationString:" : "jh 6/1/2017 10:37",
-		"open" : "AZ 6/1/2017 09:51" },
+		"open" : "jh 6/1/2017 15:37" },
 	"instance" : {
 		"activateWindow" : "adz 5/18/2017 10:13",
 		"activateWindowAndClose" : "AZ 5/25/2017 15:59",
@@ -18,7 +14,7 @@
 		"instance:" : "jh 5/30/2017 13:07",
 		"intoWorld:" : "jh 5/16/2017 12:13",
 		"keyDown:" : "jh 5/30/2017 11:01",
-		"keyUp:" : "AZ 6/1/2017 10:36",
+		"keyUp:" : "jh 6/1/2017 15:53",
 		"scroll" : "jh 5/30/2017 10:58",
 		"scrollingDirection" : "jh 5/30/2017 10:57",
 		"scrollingDirection:" : "jh 5/30/2017 10:57",

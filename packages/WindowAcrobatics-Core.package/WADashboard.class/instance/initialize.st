@@ -26,7 +26,8 @@ initialize
 		cellInset: 15@35;
 		listDirection: #leftToRight;
 		wrapDirection: #topToBottom;
-		cellPositioning: #topCenter.
+		cellPositioning: #topCenter;
+		scrollingDirection: #right.
 
 	self initializeSelectionRectangle.
 	self initializeThumbnails.

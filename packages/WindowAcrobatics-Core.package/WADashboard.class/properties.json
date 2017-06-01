@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectionRectangle" ],
+		"selectionRectangle",
+		"scrollingDirection" ],
 	"name" : "WADashboard",
 	"pools" : [
 		 ],

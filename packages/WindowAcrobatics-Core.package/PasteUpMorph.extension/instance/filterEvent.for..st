@@ -23,7 +23,6 @@ filterEvent: aKeyboardEvent for: anObject
 			"[$Z] -> [ChangeList browseRecentLog]."
 			[$]] -> [Smalltalk snapshot: true andQuit: false].
 			[$+] -> [Preferences increaseFontSize].
-			[$J] -> [ WADashboard new openInWorld].
 			[$-] -> [Preferences decreaseFontSize].
 			[$=] -> [Preferences restoreDefaultFonts].
 		} otherwise: [^ aKeyboardEvent "no hit"].

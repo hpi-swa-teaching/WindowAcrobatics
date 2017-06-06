@@ -5,6 +5,6 @@ keyDown: anEvent.
 			self scrollingDirection: #left.
 		].
 	"(anEvent keyString = (WAHandler keyToDescriptionBindings keyAtValue: 'openDashboard')) -- does not match..."
-	anEvent keyValue = 13 ifTrue: [
+	anEvent keyValue = 55 ifFalse: [
 			self scroll.
 		].

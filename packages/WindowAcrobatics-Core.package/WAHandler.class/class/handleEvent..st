@@ -3,15 +3,15 @@ handleEvent: aKeyboardEvent
 
 	|alignNotHandled dashboardNotHandled|
 	
-	alignNotHandled := false.
-	dashboardNotHandled := false.
+	alignNotHandled := true.
+	dashboardNotHandled := true.
 	
 	self alignmentActive ifTrue: [
-		(self descriptionToActionBindings at: (self keyToDescriptionBindingsAlignment at: aKeyboardEvent keyString ifAbsent: []) ifAbsent: [alignNotHandled := true.]) value.
+		(self descriptionToActionBindings at: (self keyToDescriptionBindingsAlignment at: aKeyboardEvent keyString ifAbsent: [alignNotHandled := false]) ifAbsent: []) value.
 		].
 	
 	self dashboardActive ifTrue: [
-		(self descriptionToActionBindings at: (self keyToDescriptionBindingsDashboard at: aKeyboardEvent keyString ifAbsent: [dashboardNotHandled := true.]) ifAbsent: []) value.
+		(self descriptionToActionBindings at: (self keyToDescriptionBindingsDashboard at: aKeyboardEvent keyString ifAbsent: [dashboardNotHandled := false.]) ifAbsent: []) value.
 		].
 	
-	^ (alignNotHandled and: dashboardNotHandled) not
+	^ (alignNotHandled or: dashboardNotHandled) and: (self alignmentActive and: self dashboardActive)

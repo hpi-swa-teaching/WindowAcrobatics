@@ -6,8 +6,8 @@ printKeyStringOn: aStream
 	kc := self keyCharacter.
 	inBrackets := false.
 	firstBracket := [ inBrackets ifFalse: [ aStream nextPut: $<. inBrackets := true ]].
-	"self controlKeyPressed ifTrue: [ 	firstBracket value. aStream nextPutAll: 'Ctrl-' ]."
-	(self commandKeyPressed or: [self controlKeyPressed]) ifTrue: [ firstBracket value. aStream nextPutAll: 'Cmd-' ].
+	self controlKeyPressed ifTrue: [ 	firstBracket value. aStream nextPutAll: 'Ctrl-' ].
+	self commandKeyPressed ifTrue: [ firstBracket value. aStream nextPutAll: 'Cmd-' ].
 	(buttons anyMask: 32) ifTrue: [ firstBracket value. aStream nextPutAll: 'Opt-' ].
 	(self shiftPressed and: [ (keyValue between: 1 and: 31) or: [self keyCharacter = Character delete ]])
 		ifTrue: [ firstBracket value. aStream nextPutAll: 'Shift-' ].

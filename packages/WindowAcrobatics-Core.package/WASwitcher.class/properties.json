@@ -3,16 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Aligner",
-		"AlignmentActive",
-		"DashboardActive",
-		"DescriptionToActionBindings",
-		"KeyToDescriptionBindings",
-		"Switcher" ],
+		"ActivationString" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "WAHandler",
+	"name" : "WASwitcher",
 	"pools" : [
 		 ],
 	"super" : "Morph",

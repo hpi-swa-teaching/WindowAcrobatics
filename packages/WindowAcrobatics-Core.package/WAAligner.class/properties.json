@@ -3,15 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Aligner",
-		"AlignmentActive",
-		"DashboardActive",
-		"DescriptionToActionBindings",
-		"KeyToDescriptionBindings" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "WAHandler",
+	"name" : "WAAligner",
 	"pools" : [
 		 ],
 	"super" : "Morph",

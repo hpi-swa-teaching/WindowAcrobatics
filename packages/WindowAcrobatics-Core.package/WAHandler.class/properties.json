@@ -6,7 +6,8 @@
 		"AlignmentActive",
 		"DashboardActive",
 		"DescriptionToActionBindings",
-		"KeyToDescriptionBindings" ],
+		"KeyToDescriptionBindingsAlignment",
+		"KeyToDescriptionBindingsDashboard" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

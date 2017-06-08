@@ -1,4 +1,4 @@
 preferences
 activateAlignment: aBool
 	
-	(self alignmentActive: self alignmentActive not) ifNil: [false]
+	self alignmentActive: (self alignmentActive not)

@@ -3,7 +3,7 @@ alignBottomKey: aString
 
 	|deprecatedKey|
 	
-	deprecatedKey := self keyToDescriptionBindings keyAtValue: 'alignBottom'.
-	(self keyToDescriptionBindings includesKey: aString) ifTrue: [^ false "already in use"].
-	self keyToDescriptionBindings removeKey: deprecatedKey.
-	self keyToDescriptionBindings add: aString-> 'alignBottom'.
+	deprecatedKey := self keyToDescriptionBindingsAlignment keyAtValue: 'alignBottom'.
+	(self keyToDescriptionBindingsAlignment includesKey: aString) ifTrue: [^ false "already in use"].
+	self keyToDescriptionBindingsAlignment removeKey: deprecatedKey.
+	self keyToDescriptionBindingsAlignment add: ('<Cmd-', aString, '>')-> 'alignBottom'.

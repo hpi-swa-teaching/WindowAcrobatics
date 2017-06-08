@@ -1,4 +1,4 @@
 preferences
 activateDashboard: aBool
 	
-	(self dashboardActive: aBool) ifNil: [false]
+	self dashboardActive:  (self dashboardActive not)

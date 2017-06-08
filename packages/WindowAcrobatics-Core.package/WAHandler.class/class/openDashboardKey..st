@@ -3,7 +3,7 @@ openDashboardKey: aString
 
 	|deprecatedKey|
 	
-	deprecatedKey := self keyToDescriptionBindings keyAtValue: 'openDashboard'.
-	(self keyToDescriptionBindings includesKey: aString) ifTrue: [^ false "already in use"].
-	self keyToDescriptionBindings removeKey: deprecatedKey.
-	self keyToDescriptionBindings add: aString-> 'openDashboard'.
+	deprecatedKey := self keyToDescriptionBindingsDashboard keyAtValue: 'openDashboard'.
+	(self keyToDescriptionBindingsDashboard includesKey: aString) ifTrue: [^ false "already in use"].
+	self keyToDescriptionBindingsDashboard removeKey: deprecatedKey.
+	self keyToDescriptionBindingsDashboard add: ('<Cmd-', aString, '>') -> 'openDashboard'.

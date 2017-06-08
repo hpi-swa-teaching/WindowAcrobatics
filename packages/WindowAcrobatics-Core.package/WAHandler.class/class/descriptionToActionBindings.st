@@ -6,4 +6,5 @@ descriptionToActionBindings
 		add: 'alignTop'->[[ :windows | windows ifNotEmpty: [ (windows at: 1) position: 0@18; extent: (World extent x)@(World extent y / 2) asInteger ]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).];
 		add: 'alignBottom'->[[ :windows | windows ifNotEmpty: [ (windows at: 1)  position: 0@(World extent y / 2) asInteger; extent: (World extent x)@(World extent y / 2) asInteger ]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).];
 		add: 'openDashboard'->[WADashboard open.];
+		add: 'alignFull'->[[ :windows | windows ifNotEmpty: [ (windows at: 1)  position: 0@(0 + 18); extent: (World extent x)@(World extent y - 18)]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).];
 		yourself.]

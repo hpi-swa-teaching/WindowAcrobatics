@@ -7,4 +7,5 @@ defaultKeybindings
 			add: '<Cmd-home>'->'alignTop';
 			add: '<Cmd-end>'->'alignBottom';
 			add: '<Cmd-w>'->'openDashboard';
+			add: '<Cmd-l>'->'alignFull';
 			yourself

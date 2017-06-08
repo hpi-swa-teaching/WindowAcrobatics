@@ -1,10 +1,14 @@
 accessing
 descriptionToActionBindings
+
+	self switcher ifNil: [self switcher: WASwitcher new].
+	self aligner ifNil: [self aligner: WAAligner new].
 	^ DescriptionToActionBindings ifNil: [DescriptionToActionBindings := Dictionary new 
-		add: 'alignLeft'->[[ :windows | windows ifNotEmpty: [ (windows at: 1) position: 0@18; extent: (World extent x / 2) asInteger @(World extent y - 18)]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).]; 
-		add: 'alignRight'->[[ :windows | windows ifNotEmpty: [ (windows at: 1) position: (World extent x / 2) asInteger @18; extent: (World extent x/ 2) asInteger @(World extent y - 18)]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).];
-		add: 'alignTop'->[[ :windows | windows ifNotEmpty: [ (windows at: 1) position: 0@18; extent: (World extent x)@(World extent y / 2) asInteger ]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).];
-		add: 'alignBottom'->[[ :windows | windows ifNotEmpty: [ (windows at: 1)  position: 0@(World extent y / 2) asInteger; extent: (World extent x)@(World extent y / 2) asInteger ]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).];
+		add: 'alignLeft'->[self aligner alignLeft]; 
+		add: 'alignRight'->[self aligner alignRight];
+		add: 'alignTop'->[self aligner alignTop];
+		add: 'alignBottom'->[self aligner alignBottom];
+		add: 'alignFull'->[self aligner alignFull];
 		add: 'openDashboard'->[WADashboard open.];
-		add: 'alignFull'->[[ :windows | windows ifNotEmpty: [ (windows at: 1)  position: 0@(0 + 18); extent: (World extent x)@(World extent y - 18)]] value: (ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]).];
+		add: 'lastWindow'->[self switcher selectLastWindow];
 		yourself.]

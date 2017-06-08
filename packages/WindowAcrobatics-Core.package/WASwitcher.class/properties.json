@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ActivationString" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WASwitcher",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

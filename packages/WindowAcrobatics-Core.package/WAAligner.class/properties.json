@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAAligner",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

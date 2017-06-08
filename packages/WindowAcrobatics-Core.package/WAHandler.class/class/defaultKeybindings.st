@@ -8,4 +8,5 @@ defaultKeybindings
 			add: '<Cmd-end>'->'alignBottom';
 			add: '<Cmd-w>'->'openDashboard';
 			add: '<Cmd-l>'->'alignFull';
+			add: '<Cmd-z>'->'lastWindow';
 			yourself

@@ -10,7 +10,7 @@ filterEvent: aKeyboardEvent for: anObject
 	aKeyboardEvent isKeystroke
 		ifFalse: [^ aKeyboardEvent].
  
-	(aKeyboardEvent commandKeyPressed or: [aKeyboardEvent controlKeyPressed]) ifTrue: [
+	aKeyboardEvent commandKeyPressed ifTrue: [
 		(WAHandler handleEvent: aKeyboardEvent) ifTrue: [^ aKeyboardEvent ignore "hit!"].
 		].
 

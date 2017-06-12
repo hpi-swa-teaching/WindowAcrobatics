@@ -3,13 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ActivationString",
-		"HasDashboard" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectionRectangle",
-		"scrollingDirection" ],
-	"name" : "WADashboard",
+		 ],
+	"name" : "WAAligner",
 	"pools" : [
 		 ],
 	"super" : "Morph",

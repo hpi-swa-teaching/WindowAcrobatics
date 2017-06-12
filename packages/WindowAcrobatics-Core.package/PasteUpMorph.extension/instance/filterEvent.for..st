@@ -9,6 +9,10 @@ filterEvent: aKeyboardEvent for: anObject
 	
 	aKeyboardEvent isKeystroke
 		ifFalse: [^ aKeyboardEvent].
+ 
+	aKeyboardEvent commandKeyPressed ifTrue: [
+		(WAHandler handleEvent: aKeyboardEvent) ifTrue: [^ aKeyboardEvent ignore "hit!"].
+		].
 
 	aKeyboardEvent commandKeyPressed ifTrue: [
 		aKeyboardEvent keyCharacter caseOf: {
@@ -19,17 +23,10 @@ filterEvent: aKeyboardEvent for: anObject
 			"[$Z] -> [ChangeList browseRecentLog]."
 			[$]] -> [Smalltalk snapshot: true andQuit: false].
 			[$+] -> [Preferences increaseFontSize].
-			[$J] -> [ WADashboard new openInWorld].
 			[$-] -> [Preferences decreaseFontSize].
 			[$=] -> [Preferences restoreDefaultFonts].
-			[$w] -> [ WADashboard new openInWorld].
-			[$q] -> [RectangleMorph new openInWorld].
-			[$l] ->[ ((ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]) at: 1) position: (World extent x / 2)@18; extent: (World extent x/ 2)@(World extent y - 18)].
-			[$k] -> [ ((ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]) at: 1) position: 0@(World extent y / 2); extent: (World extent x)@(World extent y / 2)].	
-			[$j] -> [ ((ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]) at: 1) position: 0@18; extent: (World extent x / 2)@(World extent y - 18)	].	
-			[$i] -> [ ((ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]]) at: 1) position: 0@18; extent: (World extent x)@(World extent y / 2)	].	
 		} otherwise: [^ aKeyboardEvent "no hit"].
 		
 		^ aKeyboardEvent ignore "hit!"].
-
+ 
 	^ aKeyboardEvent "no hit"

@@ -1,0 +1,20 @@
+{
+	"category" : "WindowAcrobatics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Aligner",
+		"AlignmentActive",
+		"DashboardActive",
+		"DescriptionToActionBindings",
+		"KeyToDescriptionBindingsAlignment",
+		"KeyToDescriptionBindingsDashboard",
+		"Switcher" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAHandler",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

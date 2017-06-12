@@ -1,7 +1,7 @@
 *WindowAcrobatics-Core-Events
 filterEvent: aKeyboardEvent for: anObject
 	"Provide keyboard shortcuts."
-
+	
 	"Delegate keyboard shortcuts to my docking bars."
 	self submorphsDo: [:ea | ea isDockingBar ifTrue: [
 		ea filterEvent: aKeyboardEvent for: anObject. "No support for converting events here!"
@@ -9,9 +9,9 @@ filterEvent: aKeyboardEvent for: anObject
 	
 	aKeyboardEvent isKeystroke
 		ifFalse: [^ aKeyboardEvent].
- 
+	
 	aKeyboardEvent commandKeyPressed ifTrue: [
-		(WAHandler handleEvent: aKeyboardEvent) ifTrue: [^ aKeyboardEvent ignore "hit!"].
+		(self windowAcrobaticsHandler handleEvent: aKeyboardEvent) ifTrue: [^ aKeyboardEvent ignore "hit!"].
 		].
 
 	aKeyboardEvent commandKeyPressed ifTrue: [

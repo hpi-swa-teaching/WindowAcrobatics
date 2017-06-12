@@ -1,14 +1,14 @@
 {
-	"category" : "WindowAcrobatics-Core",
+	"category" : "WindowAcrobatics-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectionRectangle" ],
-	"name" : "WADashboard",
+		 ],
+	"name" : "WASwitchWindowTest",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "TestCase",
 	"type" : "normal" }

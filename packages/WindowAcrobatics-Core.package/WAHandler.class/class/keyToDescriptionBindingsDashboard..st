@@ -1,3 +1,0 @@
-accessing
-keyToDescriptionBindingsDashboard: anObject
-	KeyToDescriptionBindingsDashboard := anObject

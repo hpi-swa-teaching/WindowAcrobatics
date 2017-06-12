@@ -1,3 +1,0 @@
-accessing
-keyToDescriptionBindingsAlignment: anObject
-	KeyToDescriptionBindingsAlignment := anObject

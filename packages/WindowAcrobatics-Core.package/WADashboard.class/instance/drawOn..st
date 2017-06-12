@@ -3,7 +3,7 @@ drawOn: aCanvas
 
 	super drawOn: aCanvas.
 	aCanvas
-		drawString: 'Hit [Esc] to close'
+		drawString: 'Hit [escape] to close.'
 		at: 10@10
 		font: Preferences standardDefaultTextFont
 		color: Color white.

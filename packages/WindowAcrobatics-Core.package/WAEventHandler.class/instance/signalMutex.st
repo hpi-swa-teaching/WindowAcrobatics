@@ -1,4 +1,0 @@
-signals - processing
-signalMutex
-
-	^ UiNullMutex

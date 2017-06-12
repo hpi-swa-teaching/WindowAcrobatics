@@ -3,5 +3,5 @@ defaultKeybindingsDashboard
 
 	^ Dictionary new 
 			add: '<Cmd-w>'->'openDashboard';
-			add: '<Cmd-z>'->'lastWindow';
+			add: '<Cmd-t>'->'lastWindow';
 			yourself

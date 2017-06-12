@@ -5,11 +5,11 @@
 		"open" : "jh 6/5/2017 16:36" },
 	"instance" : {
 		"activateWindow" : "adz 5/18/2017 10:13",
-		"activateWindowFromEvent:thumbnail:" : "jh 6/5/2017 16:18",
+		"activateWindowFromEvent:thumbnail:" : "adz 6/12/2017 20:07",
 		"closeWindow" : "jh 5/16/2017 12:13",
 		"delete" : "adz 6/6/2017 15:53",
 		"drawOn:" : "adz 6/8/2017 11:14",
-		"initialize" : "adz 6/8/2017 11:12",
+		"initialize" : "jh 6/12/2017 17:55",
 		"initializeSelectionRectangle" : "adz 5/18/2017 10:02",
 		"initializeThumbnails" : "adz 5/18/2017 10:33",
 		"intoWorld:" : "jh 5/16/2017 12:13",

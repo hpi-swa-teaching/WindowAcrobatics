@@ -1,5 +1,5 @@
 as yet unclassified
-handleEvent: aKeyboardEvent
+handle: aKeyboardEvent
 
 	|alignNotHandled dashboardNotHandled|
 	

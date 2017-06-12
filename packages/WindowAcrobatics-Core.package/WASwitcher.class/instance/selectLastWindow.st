@@ -3,7 +3,7 @@ selectLastWindow
 	
 	| systemWindows | 
 	
-	systemWindows := ActiveWorld submorphs select: [:m | m isSystemWindow]. 
-	systemWindows ifNotEmpty: [systemWindows size > 1 ifTrue: [
+	systemWindows := ActiveWorld submorphs select: [:window | window isSystemWindow]. 
+	(systemWindows isEmpty or: (systemWindows size = 1)) ifFalse: [
 			systemWindows first passivate.
-			systemWindows second activate; comeToFront.]].
+			systemWindows second activate; comeToFront.].

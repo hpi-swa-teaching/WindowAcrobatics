@@ -3,7 +3,7 @@ alignBottomKey: aString
 
 	|deprecatedKey|
 	
-	deprecatedKey := self keyToDescriptionBindingsAlignment keyAtValue: 'alignBottom'.
-	(self keyToDescriptionBindingsAlignment includesKey: aString) ifTrue: [^ false "already in use"].
-	self keyToDescriptionBindingsAlignment removeKey: deprecatedKey.
-	self keyToDescriptionBindingsAlignment add: ('<Cmd-', aString, '>')-> 'alignBottom'.
+	deprecatedKey := WAHandler keyToDescriptionBindingsAlignment keyAtValue: 'alignBottom'.
+	(WAHandler keyToDescriptionBindingsAlignment includesKey: aString) ifTrue: [^ false "already in use"].
+	WAHandler keyToDescriptionBindingsAlignment removeKey: deprecatedKey.
+	WAHandler keyToDescriptionBindingsAlignment add: ('<Cmd-', aString, '>')-> 'alignBottom'.

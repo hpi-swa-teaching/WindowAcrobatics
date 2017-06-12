@@ -5,5 +5,5 @@ alignBottomKey
 		category: #WindowAcrobatics
 		description: 'Registers the keyboard shortcut to align a window on the bottom side. Cmd for Mac OS sytems and Alt for Windows and Unix systems'
 		type: #String>
-	
-	^ ((WAHandler keyToDescriptionBindingsAlignment) keyAtValue: 'alignBottom') copyFrom: 6 to: ((WAHandler keyToDescriptionBindingsAlignment) keyAtValue: 'alignBottom') size - 1
+		
+	^ self stripOffCmd: (self keyToDescriptionBindingsAlignment keyAtValue: 'alignBottom').

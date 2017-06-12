@@ -5,4 +5,4 @@ alignFullKey
 		description: 'Registers the keyboard shortcut to align a window fullscreen. Cmd for Mac OS sytems and Alt for Windows and Unix systems'
 		type: #String>
 		
-	^ ((self keyToDescriptionBindingsAlignment) keyAtValue: 'alignFull') copyFrom: 6 to: ((self keyToDescriptionBindingsAlignment) keyAtValue: 'alignFull') size - 1
+	^ self stripOffCmd: (self keyToDescriptionBindingsAlignment keyAtValue: 'alignFull').

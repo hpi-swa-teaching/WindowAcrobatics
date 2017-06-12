@@ -1,3 +1,3 @@
 accessing
 aligner: anObject
-	aligner := anObject
+	Aligner := anObject 

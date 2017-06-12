@@ -5,4 +5,5 @@ alignLeftKey
 		description: 'Registers the keyboard shortcut to align a window on the lefthand side. Cmd for Mac OS sytems and Alt for Windows and Unix systems'
 		type: #String>
 		
-	^ ((self keyToDescriptionBindingsAlignment) keyAtValue: 'alignLeft') copyFrom: 6 to: ((self keyToDescriptionBindingsAlignment) keyAtValue: 'alignLeft') size - 1
+	^ self stripOffCmd: (self keyToDescriptionBindingsAlignment keyAtValue: 'alignLeft').
+	

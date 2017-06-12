@@ -5,4 +5,4 @@ alignTopKey
 		description: 'Registers the keyboard shortcut to align a window on the top side. Cmd for Mac OS sytems and Alt for Windows and Unix systems'
 		type: #String>
 		
-	^ ((self keyToDescriptionBindingsAlignment) keyAtValue: 'alignTop') copyFrom: 6 to: ((self keyToDescriptionBindingsAlignment) keyAtValue: 'alignTop') size - 1
+	^ self stripOffCmd: (self keyToDescriptionBindingsAlignment keyAtValue: 'alignTop').

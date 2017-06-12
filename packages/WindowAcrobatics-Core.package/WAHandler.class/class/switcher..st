@@ -1,3 +1,3 @@
 accessing
 switcher: anObject
-	switcher := anObject
+	^ Switcher := anObject

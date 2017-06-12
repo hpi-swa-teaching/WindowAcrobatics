@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 stripOffCmd: aString
 
 	^ aString copyFrom: 6 to: aString size - 1.

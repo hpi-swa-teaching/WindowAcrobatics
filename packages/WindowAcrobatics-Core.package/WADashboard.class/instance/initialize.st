@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	self color: (Color black alpha: 0.6).
 	
-	self eventHandler: UiEventHandler new.
+	self eventHandler: WAEventHandler new.
 	self eventHandler on: Character escape send: #delete to: self.
 	
 	"self eventHandler on: Character enter send: #activateWindow to: self.

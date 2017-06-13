@@ -21,7 +21,7 @@ Simply drag and drop the *.sar* into your image.
 
 ### Usage
 
-You can easily customize all the shortcuts used in Window Acrobatics in the Window Acrobatics section in your Preference Browser -- here are the defaults. 
+You can easily customize all the shortcuts used in Window Acrobatics, as well as disable or enable its components, in the Window Acrobatics section in your Preference Browser -- here are the defaults. 
 
 | Cmd/Alt +     | Action            |
 |-------------|-------------------|

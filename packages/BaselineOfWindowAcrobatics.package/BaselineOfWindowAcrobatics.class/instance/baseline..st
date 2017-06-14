@@ -1,14 +1,12 @@
 nil
 baseline: spec
 	<baseline>
-	spec
-		for: #'common'
-		do: [
+	spec for: #'common' do: [
+			spec baseline: 'Widgets' with: [spec
+							 repository: 'github://hpi-swa/widgets:master/repository'].
 			spec
 				package: 'WindowAcrobatics-Core';
-				package: 'WindowAcrobatics-Tests' with: [spec requires: #('default')];
-				yourself.
-			spec
+				package: 'WindowAcrobatics-Tests';
+
 				group: 'default' with: #('WindowAcrobatics-Core');
-				group: 'tests' with: #('WindowAcrobatics-Tests')];
-				yourself
+				group: 'tests' with: #('default' 'WindowAcrobatics-Tests' 'Widgets')]

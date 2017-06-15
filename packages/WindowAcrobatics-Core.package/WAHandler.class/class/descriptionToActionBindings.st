@@ -11,4 +11,5 @@ descriptionToActionBindings
 		add: 'lastWindow'->[self switcher selectLastWindow];
 		add: 'spaceLeft' -> [self switcher spaceToLeft];
 		add: 'spaceRight' -> [self switcher spaceToRight];
+		add: 'alignLastUsedWindows' ->[self aligner alignLastUsedWindows];
 		yourself.]

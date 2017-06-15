@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAlignWindowBottom" : "adz 6/13/2017 16:09",
-		"testAlignWindowFull" : "adz 6/13/2017 16:09",
-		"testAlignWindowLeft" : "adz 6/13/2017 16:09",
-		"testAlignWindowRight" : "adz 6/13/2017 16:09",
-		"testAlignWindowTop" : "adz 6/13/2017 16:09" } }
+		"testAlignLastUsedWindows" : "jh 6/15/2017 16:35",
+		"testAlignWindowBottom" : "jh 6/15/2017 13:42",
+		"testAlignWindowFull" : "jh 6/15/2017 13:43",
+		"testAlignWindowLeft" : "jh 6/15/2017 13:43",
+		"testAlignWindowRight" : "jh 6/15/2017 13:43",
+		"testAlignWindowTop" : "jh 6/15/2017 13:43" } }

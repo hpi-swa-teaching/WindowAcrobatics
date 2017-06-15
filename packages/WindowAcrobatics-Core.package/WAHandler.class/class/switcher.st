@@ -1,4 +1,6 @@
 accessing
 switcher
-	Switcher ifNil: [self switcher: WASwitcher new].
+
+	Switcher ifNil: [Switcher := WASwitcher new].
+	
 	^ Switcher

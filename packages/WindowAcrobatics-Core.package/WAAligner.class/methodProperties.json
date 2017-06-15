@@ -2,7 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"align:" : "AZ 6/15/2017 09:59",
-		"defaultValues" : "AZ 6/15/2017 10:41",
+		"align:" : "AZ 6/15/2017 13:54",
+		"alignBlock" : "AZ 6/15/2017 13:33",
+		"alignLastUsedWindows" : "AZ 6/15/2017 13:42",
 		"dockingBarYExtent" : "AZ 6/15/2017 10:13",
-		"initialize" : "AZ 6/8/2017 11:39" } }
+		"initialize" : "AZ 6/8/2017 11:39",
+		"openWindows" : "AZ 6/15/2017 13:42",
+		"windowExtents" : "AZ 6/15/2017 13:23",
+		"windowPositions" : "jh 6/15/2017 12:59" } }

@@ -7,6 +7,7 @@ defaultKeybindingsAlignment
 			add: '<Cmd-left>'->'alignLeft'; 
 			add: '<Cmd-right>'->'alignRight';
 			add: '<Cmd-l>'->'alignFull';
+			add: '<Cmd-k>'->'alignLastUsedWindows';			
 			yourself.
 		
 	(Smalltalk platformName = 'Mac OS') ifFalse: [keyBindings add: '<Cmd-up>'->'alignTop';

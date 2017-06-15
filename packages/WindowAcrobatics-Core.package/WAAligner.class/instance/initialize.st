@@ -1,3 +1,3 @@
-as yet unclassified
+initializing
 initialize 
 	super initialize 

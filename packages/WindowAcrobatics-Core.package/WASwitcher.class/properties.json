@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ActivationString" ],
+		"ActivationString",
+		"SpaceNumber" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

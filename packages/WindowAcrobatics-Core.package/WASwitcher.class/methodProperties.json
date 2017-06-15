@@ -1,6 +1,11 @@
 {
 	"class" : {
-		 },
+		"spaceNumber" : "adz 6/15/2017 12:25",
+		"spaceNumber:" : "adz 6/15/2017 12:13" },
 	"instance" : {
 		"initialize" : "adz 6/8/2017 11:29",
-		"selectLastWindow" : "adz 6/8/2017 11:48" } }
+		"moveWindowLeft:" : "adz 6/15/2017 11:42",
+		"moveWindowRight:" : "adz 6/15/2017 11:43",
+		"selectLastWindow" : "adz 6/8/2017 11:48",
+		"spaceToLeft" : "adz 6/15/2017 12:32",
+		"spaceToRight" : "adz 6/15/2017 12:32" } }

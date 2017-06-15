@@ -1,8 +1,6 @@
 accessing
 descriptionToActionBindings
 
-	self switcher ifNil: [self switcher: WASwitcher new].
-	self aligner ifNil: [self aligner: WAAligner new].
 	^ DescriptionToActionBindings ifNil: [DescriptionToActionBindings := Dictionary new 
 		add: 'alignLeft'->[self aligner align: #left]; 
 		add: 'alignRight'->[self aligner align: #right];
@@ -11,4 +9,6 @@ descriptionToActionBindings
 		add: 'alignFull'->[self aligner align: #full];
 		add: 'openDashboard'->[WADashboard open.];
 		add: 'lastWindow'->[self switcher selectLastWindow];
+		add: 'spaceLeft' -> [self switcher spaceToLeft];
+		add: 'spaceRight' -> [self switcher spaceToRight];
 		yourself.]

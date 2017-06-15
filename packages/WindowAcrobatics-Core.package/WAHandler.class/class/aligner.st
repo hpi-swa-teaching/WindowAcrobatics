@@ -1,3 +1,4 @@
 accessing
 aligner
-	^ Aligner
+      Aligner ifNil: [self aligner: WAAligner new].	
+	^ Aligner 

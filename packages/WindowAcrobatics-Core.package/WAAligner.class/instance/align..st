@@ -1,31 +1,31 @@
 as yet unclassified
-align: aString
+align: aSymbol
 
 	|values corner stretch| 
 	
 	values := self defaultValues.
 	
-	aString = 'bottom' ifTrue: [
+	aSymbol = 'bottom' ifTrue: [
 		corner := 'leftMiddleCorner'.
 		stretch := 'halfHorizontalScreen'.
 		].
 	
-	aString = 'full' ifTrue: [
+	aSymbol = 'full' ifTrue: [
 		corner := 'leftUpperCorner'.
 		stretch := 'fullExtent'.
 		].
 	
-	aString = 'left' ifTrue: [
+	aSymbol = 'left' ifTrue: [
 		corner := 'leftUpperCorner'.
 		stretch := 'halfVerticleScreen'.
 		].
 	
-	aString = 'right' ifTrue: [
+	aSymbol = 'right' ifTrue: [
 		corner := 'upperMiddle'.
 		stretch := 'halfVerticleScreen'.
 		].
 	
-	aString = 'top' ifTrue: [
+	aSymbol = 'top' ifTrue: [
 		corner := 'leftUpperCorner'.
 		stretch := 'halfHorizontalScreen'.
 		].

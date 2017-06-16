@@ -3,7 +3,7 @@ spaceRight: aString
 
 	|deprecatedKey|
 	
-	deprecatedKey := self keyToDescriptionBindingsDashboard keyAtValue: 'spaceRight'.
-	(self keyToDescriptionBindingsDashboard includesKey: ('<Cmd-', aString, '>')) ifTrue: [^ false "already in use"].
-	self keyToDescriptionBindingsDashboard removeKey: deprecatedKey.
-	self keyToDescriptionBindingsDashboard add: ('<Cmd-', aString, '>') -> 'spaceRight'.
+	deprecatedKey := self keyToDescriptionBindingsSwitching keyAtValue: 'spaceRight'.
+	(self keyToDescriptionBindingsSwitching includesKey: ('<Cmd-', aString, '>')) ifTrue: [^ false "already in use"].
+	self keyToDescriptionBindingsSwitching removeKey: deprecatedKey.
+	self keyToDescriptionBindingsSwitching add: ('<Cmd-', aString, '>') -> 'spaceRight'.

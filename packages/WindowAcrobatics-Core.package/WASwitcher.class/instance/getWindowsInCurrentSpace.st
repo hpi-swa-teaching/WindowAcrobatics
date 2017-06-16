@@ -1,4 +1,4 @@
-as yet unclassified
+spaces
 getWindowsInCurrentSpace
 	
 	|windows| 

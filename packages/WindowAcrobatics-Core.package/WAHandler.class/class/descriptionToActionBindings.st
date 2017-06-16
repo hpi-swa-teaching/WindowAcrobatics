@@ -7,7 +7,7 @@ descriptionToActionBindings
 		add: 'alignTop'->[self aligner align: #top];
 		add: 'alignBottom'->[self aligner align: #bottom];
 		add: 'alignFull'->[self aligner align: #full];
-		add: 'openDashboard'->[WADashboard open.];
+		add: 'openDashboard'->[WADashboard open];
 		add: 'lastWindow'->[self switcher selectLastWindow];
 		add: 'spaceLeft' -> [self switcher spaceToLeft];
 		add: 'spaceRight' -> [self switcher spaceToRight];

@@ -9,7 +9,9 @@
 		"DescriptionToActionBindings",
 		"KeyToDescriptionBindingsAlignment",
 		"KeyToDescriptionBindingsDashboard",
-		"Switcher" ],
+		"KeyToDescriptionBindingsSwitching",
+		"Switcher",
+		"SwitchingActive" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

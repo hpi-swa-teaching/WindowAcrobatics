@@ -6,4 +6,4 @@ spaceLeft
 		description: 'Registers the keyboard shortcut to switch to space left from you'
 		type: #String>
 		
-	^ self stripOffCmd: (self keyToDescriptionBindingsDashboard keyAtValue: 'spaceLeft').
+	^ self stripOffCmd: (self keyToDescriptionBindingsSwitching keyAtValue: 'spaceLeft').

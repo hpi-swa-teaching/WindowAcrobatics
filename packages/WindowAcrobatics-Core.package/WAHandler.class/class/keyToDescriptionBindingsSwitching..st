@@ -1,0 +1,3 @@
+accessing
+keyToDescriptionBindingsSwitching: anObject
+	KeyToDescriptionBindingsSwitching := anObject.

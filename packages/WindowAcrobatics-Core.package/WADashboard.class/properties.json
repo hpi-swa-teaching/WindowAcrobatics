@@ -7,7 +7,8 @@
 		"HasDashboard" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectionRectangle" ],
+		"selectionRectangle",
+		"spacesActive" ],
 	"name" : "WADashboard",
 	"pools" : [
 		 ],

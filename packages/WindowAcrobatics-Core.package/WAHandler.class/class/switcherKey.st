@@ -6,4 +6,4 @@ switcherKey
 		description: 'Registers the keyboard shortcut to switch to last window'
 		type: #String>
 		
-	^ self stripOffCmd: (self keyToDescriptionBindingsDashboard keyAtValue: 'lastWindow').
+	^ self stripOffCmd: (self keyToDescriptionBindingsSwitching keyAtValue: 'lastWindow').

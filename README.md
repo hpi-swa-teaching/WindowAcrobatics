@@ -10,11 +10,11 @@ Window Acrobatics bundles a number of ways you are used to interacting with your
 Current components of Window Acrobatics include
 
 * __The Window Aligner__
-  * A tool that lets you align windows to specific parts of your screen easily.
+  * A tool that lets you align windows to specific parts of your screen easily as well as arrange them into tiles.
 * __The Expose View__
-  * An overview of all currently open windows.
+  * An overview of all currently open windows that lets you select and thus bring to front a window.
 * __The Window Switcher__
-  * A switching tool that lets you cycle over your windows.
+  * A switching tool that lets you cycle over your windows and switch between different Spaces.
 
 ### Installation
 Simply drag and drop the *.sar* into your image.
@@ -30,8 +30,11 @@ You can easily customize all the shortcuts used in Window Acrobatics, as well as
 | Arrow Up    | Align window at the top      |
 | Arrow down  | Align window at the bottom     |
 | l | Align window fullscreen      |
+| k | Arrange windows into tiles     | 
 | w  | Open Expose View      |
 | t       | Switch between last used windows |
+| q       | Switch to left Space |
+| e       | Switch to right Space |
 
 If you are on a Mac, use Cmd and Alt otherwise.
 

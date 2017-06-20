@@ -7,7 +7,7 @@ testAlignLastUsedWindows
 	window2 := SystemWindow new openInWorld.
 	window3 := SystemWindow new openInWorld.
 	
-	WAAligner new alignLastUsedWindows.
+	WAAligner new alignLastUsedWindows: 4.
 	
 	self assert: (window1 width = (World width / 2) asInteger) description: 'Width is incorrect'.
 	self assert: (window2 height = ((World height - 18) / 2) asInteger) description: 'Height is incorrect'.

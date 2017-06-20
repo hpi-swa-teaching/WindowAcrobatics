@@ -18,6 +18,7 @@ Current components of Window Acrobatics include
 
 ### Installation
 Simply drag and drop the *.sar* into your image.
+Then run `WAHandler reset` in your Workspace.
 
 ### Usage
 

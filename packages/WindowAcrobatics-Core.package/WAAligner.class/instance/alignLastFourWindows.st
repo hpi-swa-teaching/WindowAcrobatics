@@ -1,5 +1,5 @@
 handling
-alignLastUsedWindows
+alignLastFourWindows
 
 	|windows|
 

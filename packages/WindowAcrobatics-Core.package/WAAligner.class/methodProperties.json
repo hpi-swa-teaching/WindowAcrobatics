@@ -4,9 +4,12 @@
 	"instance" : {
 		"align:" : "AZ 6/15/2017 13:54",
 		"alignBlock" : "AZ 6/15/2017 13:33",
-		"alignLastUsedWindows" : "AZ 6/15/2017 13:42",
+		"alignLastFourWindows" : "jh 6/20/2017 12:12",
+		"alignLastSixWindows" : "jh 6/20/2017 12:13",
+		"alignLastTwoWindows" : "jh 6/20/2017 12:18",
+		"alignLastUsedWindows:" : "jh 6/20/2017 12:17",
 		"dockingBarYExtent" : "AZ 6/15/2017 10:13",
 		"initialize" : "AZ 6/8/2017 11:39",
 		"openWindows" : "AZ 6/15/2017 13:42",
-		"windowExtents" : "AZ 6/15/2017 13:23",
-		"windowPositions" : "jh 6/15/2017 12:59" } }
+		"windowExtents" : "jh 6/19/2017 23:07",
+		"windowPositions" : "jh 6/20/2017 12:37" } }

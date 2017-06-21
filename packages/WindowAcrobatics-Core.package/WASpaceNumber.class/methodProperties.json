@@ -1,12 +1,12 @@
 {
 	"class" : {
-		 },
+		"new:" : "adz 6/22/2017 00:46" },
 	"instance" : {
-		"countDown" : "adz 6/21/2017 14:25",
-		"initialize" : "adz 6/21/2017 14:27",
+		"addNumberToMorph:colored:" : "adz 6/22/2017 00:36",
+		"countDown" : "adz 6/22/2017 00:47",
+		"initialize:" : "adz 6/22/2017 00:48",
 		"number" : "adz 6/21/2017 14:17",
 		"number:" : "adz 6/21/2017 14:17",
 		"seconds" : "adz 6/21/2017 14:24",
 		"seconds:" : "adz 6/21/2017 14:24",
-		"step" : "adz 6/21/2017 14:23",
-		"with:" : "adz 6/21/2017 16:55" } }
+		"step" : "adz 6/21/2017 14:23" } }

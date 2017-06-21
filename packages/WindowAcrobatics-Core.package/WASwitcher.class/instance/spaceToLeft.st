@@ -7,5 +7,5 @@ spaceToLeft
 	windows := ActiveWorld submorphs select: [:w | w isSystemWindow].
 	windows do: [:w | self moveWindowRight: w.].
 	WASwitcher spaceNumber: WASwitcher spaceNumber -1.
-	self spaceVisualization: (WASpaceNumber new with: WASwitcher spaceNumber).
+	self spaceVisualization: (WASpaceNumber new: WASwitcher spaceNumber).
 	]

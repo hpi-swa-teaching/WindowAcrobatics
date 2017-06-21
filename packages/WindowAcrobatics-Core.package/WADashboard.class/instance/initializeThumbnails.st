@@ -15,7 +15,7 @@ initializeThumbnails
 		thumbnail := thumbnail asMorph.
 		
 		thumbnail setProperty: #window toValue: wnd. 
-		thumbnail on: #mouseDown send: #activateWindowFromEvent:thumbnail: to: self.
+		thumbnail on: #click send: #activateWindowFromEvent:thumbnail: to: self.
 		thumbnail on: #mouseEnter send: #selectWindowFromEvent:thumbnail: to: self.
 		
 		self addMorphBack: thumbnail].

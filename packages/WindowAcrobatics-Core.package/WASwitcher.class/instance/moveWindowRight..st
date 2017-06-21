@@ -9,7 +9,7 @@ moveWindowRight: aWindow
 	(AnimPropertyAnimation
 		on: aWindow 
 		property: #position
-		start: aWindow position
+		start: aWindow position 
 		end: endPoint
 		duration: 100)
 		register;

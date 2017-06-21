@@ -7,8 +7,9 @@
 		"SpaceNumber" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"spaceVisualization" ],
-	"name" : "WASwitcher",
+		"number",
+		"seconds" ],
+	"name" : "WASpaceNumber",
 	"pools" : [
 		 ],
 	"super" : "Morph",

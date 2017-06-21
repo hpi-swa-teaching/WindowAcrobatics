@@ -5,8 +5,10 @@
 	"instance" : {
 		"getWindowsInCurrentSpace" : "adz 6/15/2017 20:17",
 		"initialize" : "adz 6/8/2017 11:29",
-		"moveWindowLeft:" : "adz 6/16/2017 17:07",
-		"moveWindowRight:" : "adz 6/16/2017 17:07",
+		"moveWindowLeft:" : "adz 6/21/2017 13:06",
+		"moveWindowRight:" : "adz 6/21/2017 13:06",
 		"selectLastWindow" : "adz 6/8/2017 11:48",
-		"spaceToLeft" : "adz 6/16/2017 17:41",
-		"spaceToRight" : "adz 6/15/2017 20:04" } }
+		"spaceToLeft" : "adz 6/21/2017 14:31",
+		"spaceToRight" : "adz 6/21/2017 14:30",
+		"spaceVisualization" : "adz 6/21/2017 14:29",
+		"spaceVisualization:" : "adz 6/21/2017 14:29" } }

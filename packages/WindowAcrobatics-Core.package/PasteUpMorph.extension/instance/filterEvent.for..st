@@ -11,7 +11,7 @@ filterEvent: aKeyboardEvent for: anObject
 		ifFalse: [^ aKeyboardEvent].
  
 	aKeyboardEvent commandKeyPressed ifTrue: [
-		(WAHandler handleEvent: aKeyboardEvent) ifTrue: [^ aKeyboardEvent ignore "hit!"].
+		(WAHandler handle: aKeyboardEvent) ifTrue: [^ aKeyboardEvent ignore "hit!"].
 		].
 
 	aKeyboardEvent commandKeyPressed ifTrue: [

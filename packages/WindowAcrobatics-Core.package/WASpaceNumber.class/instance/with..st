@@ -1,7 +1,7 @@
 as yet unclassified
 with: aNumber
 
-	self extent: 1920@70;
+	self extent: ActiveWorld extent x@70;
 		clipSubmorphs: true;
 		disableTableLayout: true;
 		color: (Color black alpha: 0.6);

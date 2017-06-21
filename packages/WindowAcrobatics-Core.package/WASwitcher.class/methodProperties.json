@@ -5,8 +5,8 @@
 	"instance" : {
 		"getWindowsInCurrentSpace" : "adz 6/15/2017 20:17",
 		"initialize" : "adz 6/8/2017 11:29",
-		"moveWindowLeft:" : "adz 6/21/2017 13:06",
-		"moveWindowRight:" : "adz 6/21/2017 13:06",
+		"moveWindowLeft:" : "adz 6/21/2017 17:05",
+		"moveWindowRight:" : "adz 6/21/2017 17:06",
 		"selectLastWindow" : "adz 6/8/2017 11:48",
 		"spaceToLeft" : "adz 6/21/2017 14:31",
 		"spaceToRight" : "adz 6/21/2017 14:30",

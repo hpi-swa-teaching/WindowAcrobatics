@@ -6,11 +6,11 @@ testWindowSwitching
 	window1 := SystemWindow new openInWorld.
 	window2 := SystemWindow new openInWorld.
 	
-	WADashboard open selectPreviousWindow activateWindow.
+	WAExpose open selectPreviousWindow activateWindow.
 	
 	self assert: (((ActiveWorld submorphs select: [:m | m isSystemWindow]) at: 1) == window2) description: 'Switchign within dashboard didnt work'.
 	
-	WADashboard open selectPreviousWindow selectNextWindow activateWindow.
+	WAExpose open selectPreviousWindow selectNextWindow activateWindow.
 	
 	self assert: (((ActiveWorld submorphs select: [:m | m isSystemWindow]) at: 1) == window1) description: 'Switchign within dashboard didnt work'.
 	

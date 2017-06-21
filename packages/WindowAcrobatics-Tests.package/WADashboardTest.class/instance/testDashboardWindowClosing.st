@@ -8,6 +8,6 @@ testDashboardWindowClosing
 	
 	self assert: ((ActiveWorld submorphs select: [:m | m isSystemWindow]) size = (numberOfWindows + 1)).
 	
-	WADashboard open selectPreviousWindow closeWindow delete.
+	WAExpose open selectPreviousWindow closeWindow delete.
 	
 	self assert: ((ActiveWorld submorphs select: [:m | m isSystemWindow]) size = numberOfWindows ).

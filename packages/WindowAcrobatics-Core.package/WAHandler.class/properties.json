@@ -19,5 +19,5 @@
 	"name" : "WAHandler",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "Object",
 	"type" : "normal" }

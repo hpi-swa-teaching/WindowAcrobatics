@@ -9,7 +9,7 @@
 	"instvars" : [
 		"selectionRectangle",
 		"spacesActive" ],
-	"name" : "WADashboard",
+	"name" : "WAExpose",
 	"pools" : [
 		 ],
 	"super" : "Morph",

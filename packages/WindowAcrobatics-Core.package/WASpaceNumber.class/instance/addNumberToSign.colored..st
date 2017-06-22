@@ -1,5 +1,5 @@
-as yet unclassified
-addNumberToMorph: aNumber colored: aColor
+drawing
+addNumberToSign: aNumber colored: aColor
 
 	self addMorphBack: (StringMorph new center: self center; 
 			contents: aNumber asString;

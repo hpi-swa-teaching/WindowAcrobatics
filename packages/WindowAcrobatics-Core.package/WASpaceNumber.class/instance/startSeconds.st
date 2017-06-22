@@ -1,0 +1,4 @@
+defaults
+startSeconds
+
+	^ 1

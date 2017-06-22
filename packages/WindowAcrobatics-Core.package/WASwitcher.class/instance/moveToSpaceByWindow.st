@@ -5,5 +5,5 @@ moveToSpaceByWindow
 
 	windows := ActiveHand submorphs select: [ :w | w isSystemWindow ].
 	windows ifEmpty: [^false] .
-	ActiveHand position x + 1 = ActiveWorld extent x ifTrue: [ self spaceToRight ].
-	ActiveHand position x  = 0 ifTrue: [ self spaceToLeft ].
+	ActiveHand position x + 3 >= ActiveWorld extent x ifTrue: [ self spaceToRight ].
+	ActiveHand position x - 3  <= 0 ifTrue: [ self spaceToLeft ].

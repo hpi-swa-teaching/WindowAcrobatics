@@ -5,3 +5,4 @@ reset
 	self keyToDescriptionBindingsDashboard: nil.
 	self keyToDescriptionBindingsAlignment: nil.
 	self descriptionToActionBindings: nil.
+	self switcher: nil.

@@ -1,4 +1,4 @@
 accessing
 openWindows
 
-	^  ActiveWorld submorphs select: [:m | m isSystemWindow].
+	WAHandler switchingActive ifTrue: [^ self getWindowsInCurrentSpace ] ifFalse: [^  ActiveWorld submorphs select: [:m | m isSystemWindow]].

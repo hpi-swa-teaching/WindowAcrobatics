@@ -3,8 +3,6 @@ initialize
 
 	super initialize.
 	
-	self spacesActive: WAHandler switchingActive.
-	
 	self color: (Color black alpha: 0.6).
 	
 	self eventHandler: UiEventHandler new.

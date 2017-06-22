@@ -11,5 +11,5 @@
 	"name" : "WASwitcher",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Morph",
 	"type" : "normal" }

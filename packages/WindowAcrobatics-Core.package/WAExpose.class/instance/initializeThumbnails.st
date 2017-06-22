@@ -2,7 +2,7 @@ as yet unclassified
 initializeThumbnails
 
 	| windows |
-	self spacesActive ifTrue: [| switcher | switcher := WASwitcher new. windows := switcher getWindowsInCurrentSpace] ifFalse: [windows := ActiveWorld submorphs select: [:m | m isSystemWindow]].
+	WAHandler switchingActive ifTrue: [windows := self getWindowsInCurrentSpace] ifFalse: [windows := ActiveWorld submorphs select: [:m | m isSystemWindow]].
 	
 	windows do: [:wnd |
 		| thumbnail | 

@@ -1,9 +1,9 @@
-as yet unclassified
+spaces
 moveToSpaceByWindow
 
-	| windows | 
-
-	windows := ActiveHand submorphs select: [ :w | w isSystemWindow ].
-	windows ifEmpty: [^false] .
-	ActiveHand position x + 3 >= ActiveWorld extent x ifTrue: [ self spaceToRight ].
-	ActiveHand position x - 3  <= 0 ifTrue: [ self spaceToLeft ].
+	self handHasWindow ifTrue: [
+		self handOverRightBorder ifTrue: [ self spaceToRight ].
+		self handOverLeftBorder ifTrue: [ self spaceToLeft ].
+		].
+	
+	

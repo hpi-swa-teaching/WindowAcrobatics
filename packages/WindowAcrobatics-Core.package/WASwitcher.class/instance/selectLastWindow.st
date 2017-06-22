@@ -1,9 +1,5 @@
-as yet unclassified
+windowswitching
 selectLastWindow
 	
-	| systemWindows | 
-	
-	systemWindows := ActiveWorld submorphs select: [:m | m isSystemWindow]. 
-	systemWindows ifNotEmpty: [systemWindows size > 1 ifTrue: [
-			systemWindows first passivate.
-			systemWindows second activate; comeToFront.]].
+	self getSystemWindows ifNotEmpty: [self getSystemWindows size > 1 ifTrue: [
+			self switchLastAndCurrent: self getSystemWindows.]].

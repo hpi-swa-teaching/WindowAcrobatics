@@ -6,7 +6,7 @@ defaultKeybindingsAlignment
 	keyBindings := Dictionary new 
 			add: '<Cmd-left>'->'alignLeft'; 
 			add: '<Cmd-right>'->'alignRight';
-			add: '<Cmd-l>'->'alignFull';
+			add: '<Cmd-->'->'alignFull';
 			add: '<Cmd-k>'->'alignLastUsedWindows';			
 			yourself.
 		

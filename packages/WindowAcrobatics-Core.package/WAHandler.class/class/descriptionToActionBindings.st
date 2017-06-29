@@ -9,6 +9,7 @@ descriptionToActionBindings
 		add: 'alignFull'->[self aligner align: #full];
 		add: 'openDashboard'->[WAExpose open];
 		add: 'lastWindow'->[self switcher selectLastWindow];
+		add: 'cycle'->[self switcher cycleThroughTypes];
 		add: 'spaceLeft' -> [self switcher spaceToLeft];
 		add: 'spaceRight' -> [self switcher spaceToRight];
 		add: 'alignLastUsedWindows' ->[self aligner alignLastUsedWindows: self numberOfLastWindows];

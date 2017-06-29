@@ -4,5 +4,5 @@ getAllWindowsOfCurrentType
 	|type|
 	
 	type := self getCurrentWindowType.
-	
-	^ self getSystemWindows select: [ :w | w label == type].
+
+	^ self getWindowsInCurrentSpace select: [ :w | w model isKindOf: type class].

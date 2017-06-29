@@ -1,4 +1,4 @@
-*WindowAcrobatics-Core-Events
+*WindowAcrobatics-Core-Events-override
 filterEvent: aKeyboardEvent for: anObject
 	"Provide keyboard shortcuts."
 

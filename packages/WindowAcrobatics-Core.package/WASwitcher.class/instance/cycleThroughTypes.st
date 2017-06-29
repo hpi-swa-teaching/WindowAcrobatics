@@ -4,5 +4,5 @@ cycleThroughTypes
 	|windows|
 	
 	windows := self getAllWindowsOfCurrentType.
-	(windows first) sendToBack.
-	windows second activate; comeToFront.
+	windows ifNotEmpty: [windows size > 1 ifTrue: [windows first passivate; sendToBack. windows second beKeyWindow.]]
+	

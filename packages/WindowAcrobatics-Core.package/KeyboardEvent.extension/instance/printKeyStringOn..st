@@ -1,4 +1,4 @@
-*WindowAcrobatics-Core
+*WindowAcrobatics-Core-override
 printKeyStringOn: aStream
 	"Print a readable string representing the receiver on a given stream"
 

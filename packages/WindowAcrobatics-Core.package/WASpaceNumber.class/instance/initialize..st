@@ -1,18 +1,14 @@
-as yet unclassified
+initialization
 initialize: aNumber
 
 	super initialize.
-	self seconds: 1;
-		extent: ActiveWorld extent x@70;
+	self seconds: self startSeconds;
+		extent: self defaultExtent;
 		clipSubmorphs: true;
 		disableTableLayout: true;
-		color: (Color black alpha: 0.6);
-		layoutPolicy: TableLayout new; 
-			listDirection: #leftToRight;
-			listCentering: #center;
-			layoutInset: 10; 
-			cellInset: 5.
+		color: self defaultColor;
+		setLayout.
 	
-	1 to: 3 do: [:n | n = aNumber ifTrue: [self addNumberToMorph: n colored: Color white] ifFalse: [self addNumberToMorph: n colored: Color gray]].
+	1 to: (self numberOfSpaces) do: [:n | n = aNumber ifTrue: [self addNumberToSign: n colored: Color white] ifFalse: [self addNumberToSign: n colored: Color gray]].
 	
 	self openInWorld.

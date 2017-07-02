@@ -1,5 +1,5 @@
 as yet unclassified
-testAlignLastUsedWindows
+testAlignFourLastUsedWindows
 
 	|window1 window2 window3|
 	

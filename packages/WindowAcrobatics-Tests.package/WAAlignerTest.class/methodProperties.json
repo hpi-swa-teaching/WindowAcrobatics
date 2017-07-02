@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAlignLastUsedWindows" : "jh 6/20/2017 12:42",
+		"testAlignFourLastUsedWindows" : "jh 7/2/2017 12:20",
+		"testAlignSixLastUsedWindows" : "jh 7/2/2017 12:25",
+		"testAlignTwoLastUsedWindows" : "jh 7/2/2017 12:21",
 		"testAlignWindowBottom" : "jh 6/15/2017 13:42",
 		"testAlignWindowFull" : "jh 6/15/2017 13:43",
 		"testAlignWindowLeft" : "jh 6/15/2017 13:43",

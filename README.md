@@ -36,7 +36,7 @@ You can easily customize all the shortcuts used in Window Acrobatics, as well as
 | t       | Switch between last used windows |
 | q       | Switch to left Space |
 | e       | Switch to right Space |
-| u       | Cycle through windows of the same type|
+| shift+u       | Cycle through windows of the same type|
 
 If you are on a Mac, use Cmd and Alt otherwise.
 

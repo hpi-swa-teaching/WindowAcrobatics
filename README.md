@@ -17,8 +17,8 @@ Current components of Window Acrobatics include
   * A switching tool that lets you cycle over your windows and switch between different Spaces.
 
 ### Installation
-Simply drag and drop the *.sar* into your image.
-Then run `WAHandler reset` in your Workspace.
+Simply drag and drop the newest *.sar* into your image.
+You may need to activate WindowAcrobatics explicitly -- just follow the post-install instructions in your image!
 
 ### Usage
 

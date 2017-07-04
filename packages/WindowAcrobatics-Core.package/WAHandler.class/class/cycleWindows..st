@@ -1,9 +1,9 @@
 preferences
-cycleWindows: aString
+cycleWindows: aString   
 
-	|deprecatedKey|
+	|deprecatedKey |
 	
-	deprecatedKey := self keyToDescriptionBindingsSwitching keyAtValue: 'cycle'.
-	(self keyToDescriptionBindingsSwitching includesKey: ('<Cmd-', aString, '>')) ifTrue: [^ false "already in use"].
-	self keyToDescriptionBindingsSwitching removeKey: deprecatedKey.
-	self keyToDescriptionBindingsSwitching add: ('<Cmd-', aString, '>') -> 'cycle'.
+	deprecatedKey := self keyToDescriptionBindingsSwitching keyAtValue: 'cycle'.  
+	(self keyToDescriptionBindingsSwitching includesKey: ('<Cmd-', aString asUppercase , '>')) ifTrue: [^ false "already in use"].  
+	self keyToDescriptionBindingsSwitching removeKey: deprecatedKey.  
+	self keyToDescriptionBindingsSwitching add: ('<Cmd-', aString asUppercase , '>') -> 'cycle'.

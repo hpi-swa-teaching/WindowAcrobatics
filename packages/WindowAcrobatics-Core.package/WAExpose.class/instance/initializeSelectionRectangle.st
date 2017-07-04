@@ -2,12 +2,6 @@ as yet unclassified
 initializeSelectionRectangle
 	
 	selectionRectangle := Morph new
-		clipSubmorphs: true;
-		addMorphBack: (TextMorph new color: Color white;
-			margins: 30@5;
-			setToAdhereToEdge: #topLeft;
-			lock;
-			yourself);
 		addMorphBack: (('<font color="#FFFFFF"><b>x</b></font>' asHtmlText asMorph margins: 10@3; imageForm) asMorph
 			setToAdhereToEdge: #topLeft;
 			yourself);
@@ -17,7 +11,7 @@ initializeSelectionRectangle
 		color: Color transparent;
 		yourself.
 	
-	selectionRectangle submorphs second
+	selectionRectangle submorphs first
 		on: #click
 		send: #closeWindow
 		to: self.

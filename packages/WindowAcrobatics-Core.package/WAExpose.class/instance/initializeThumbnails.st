@@ -18,7 +18,14 @@ initializeThumbnails
 		thumbnail on: #click send: #activateWindowFromEvent:thumbnail: to: self.
 		thumbnail on: #mouseEnter send: #selectWindowFromEvent:thumbnail: to: self.
 		
-		self addMorphBack: thumbnail].
+		thumbnail addMorph: (TextMorph new color: Color white;
+			position: thumbnail position x@thumbnail position y - 25;
+			contents: wnd label;
+			margins: 30@5;
+			lock;
+			yourself).
+			
+		self addMorphBack: thumbnail.].
 
 	"Select the next possible window."
 	selectionRectangle goBehind.

@@ -3,7 +3,7 @@ initializeSelectionRectangle
 	
 	selectionRectangle := Morph new
 		clipSubmorphs: true;
-		addMorphBack: ('<font color="#FFFFFF">Window Title</font>' asHtmlText asMorph
+		addMorphBack: (TextMorph new color: Color white;
 			margins: 30@5;
 			setToAdhereToEdge: #topLeft;
 			lock;

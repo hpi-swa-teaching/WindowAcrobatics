@@ -1,17 +1,23 @@
 as yet unclassified
 initializeThumbnails
 
-	| windows |
-	WAHandler switchingActive ifTrue: [windows := self getWindowsInCurrentSpace] ifFalse: [windows := ActiveWorld submorphs select: [:m | m isSystemWindow]].
+	| windows thumbnails numberPages |
+	
+	WAHandler switchingActive ifTrue: [windows := self getWindowsInCurrentSpace] 
+								ifFalse: [windows := ActiveWorld submorphs select: [:m | m isSystemWindow]].
+								
+	thumbnails := OrderedCollection new.
+	numberPages := (windows size / 8) ceiling.
 	
 	windows do: [:wnd |
-		| thumbnail | 
+		| thumbnail|
+		
 		wnd hasDropShadow in: [:oldShadowValue |
 			wnd hasDropShadow: false.
 			[thumbnail := wnd imageForm]
 				ensure: [wnd hasDropShadow: oldShadowValue]].
 		
-		thumbnail := thumbnail scaledToSize: thumbnail extent // 2.
+		thumbnail := thumbnail scaledToSize: thumbnail extent // 2.3.
 		thumbnail := thumbnail asMorph.
 		
 		thumbnail setProperty: #window toValue: wnd. 
@@ -24,13 +30,22 @@ initializeThumbnails
 			margins: 30@5;
 			lock;
 			yourself).
-			
-		self addMorphBack: thumbnail.].
 
+		thumbnails add: thumbnail].
+
+	1 to: numberPages do: [:i |  
+		self pageDict at: i put: (thumbnails copyFrom: (i - 1) * 8 + 1 to: (Bag with: i*8 with: thumbnails size) min)]. 
+	
 	"Select the next possible window."
 	selectionRectangle goBehind.
 	windows
 		ifEmpty: [selectionRectangle hide]
-		ifNotEmpty: [self selectWindow: (windows size > 1
-			ifTrue: [self thumbnails second]
-			ifFalse: [self thumbnails first])].
+		ifNotEmpty: [
+			self currentPage: 1.
+			(self pageDict at: self currentPage) do: [:thmb | self addMorphBack: thmb].
+			self numberPages > 1 ifTrue: [
+				self initializeDownButton.
+			].
+			self selectWindow: (windows size > 1
+			ifTrue: [self thumbnailsOnPage second]
+			ifFalse: [self thumbnailsOnPage first])].

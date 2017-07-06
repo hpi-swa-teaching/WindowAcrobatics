@@ -10,7 +10,7 @@ initializeSelectionRectangle
 		disableTableLayout: true;
 		color: Color transparent;
 		yourself.
-	
+
 	selectionRectangle submorphs first
 		on: #click
 		send: #closeWindow

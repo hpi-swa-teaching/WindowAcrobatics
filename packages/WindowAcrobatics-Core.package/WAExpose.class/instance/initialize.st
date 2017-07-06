@@ -28,6 +28,7 @@ initialize
 		listDirection: #leftToRight;
 		wrapDirection: #topToBottom;
 		cellPositioning: #topCenter.
-
+	
+	self pageDict: Dictionary new.
 	self initializeSelectionRectangle.
 	self initializeThumbnails.

@@ -1,4 +1,4 @@
 as yet unclassified
 selectPreviousWindow
 
-	self selectWindow: (self thumbnails atWrap: (self thumbnails indexOf: self selectedWindow) - 1).
+	self selectWindow: (self thumbnailsOnPage atWrap: (self thumbnailsOnPage indexOf: self selectedWindow) - 1).

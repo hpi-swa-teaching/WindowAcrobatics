@@ -1,6 +1,6 @@
 as yet unclassified
 nextPage
-	
+
 	self thumbnailsOnPage do: [:thmb|thmb delete].
 	
 	self currentPage: self currentPage + 1. 

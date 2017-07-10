@@ -23,13 +23,13 @@ initialize
 	
 	self
 		changeTableLayout;
-		layoutInset: 10@10;
+		layoutInset: 50;
 		cellInset: 15@35;
 		listDirection: #leftToRight;
 		wrapDirection: #topToBottom;
 		cellPositioning: #topCenter.
 	
-	self numberOfWindowsOnPage: 16.
+	self numberOfWindowsOnPage: 8.
 	self pageDict: Dictionary new.
 	self initializeSelectionRectangle.
 	self initializeThumbnails.

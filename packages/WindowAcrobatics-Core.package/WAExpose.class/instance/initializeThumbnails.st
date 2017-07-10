@@ -7,7 +7,7 @@ initializeThumbnails
 								ifFalse: [windows := ActiveWorld submorphs select: [:m | m isSystemWindow]].
 								
 	thumbnails := OrderedCollection new.
-	numberPages := (windows size / 8) ceiling.
+	numberPages := (windows size / self numberOfWindowsOnPage) ceiling.
 	
 	windows do: [:wnd |
 		| thumbnail|
@@ -34,18 +34,16 @@ initializeThumbnails
 		thumbnails add: thumbnail].
 
 	1 to: numberPages do: [:i |  
-		self pageDict at: i put: (thumbnails copyFrom: (i - 1) * 8 + 1 to: (Bag with: i*8 with: thumbnails size) min)]. 
+		self pageDict at: i put: (thumbnails copyFrom: (i - 1) * self numberOfWindowsOnPage  + 1 to: (Bag with: i*self numberOfWindowsOnPage with: thumbnails size) min)]. 
 	
 	"Select the next possible window."
 	selectionRectangle goBehind.
+	
 	windows
-		ifEmpty: [selectionRectangle hide]
+		ifEmpty: [selectionRectangle hide. self currentPage: 0]
 		ifNotEmpty: [
 			self currentPage: 1.
 			(self pageDict at: self currentPage) do: [:thmb | self addMorphBack: thmb].
-			self numberPages > 1 ifTrue: [
-				self initializeDownButton.
-			].
 			self selectWindow: (windows size > 1
 			ifTrue: [self thumbnailsOnPage second]
 			ifFalse: [self thumbnailsOnPage first])].

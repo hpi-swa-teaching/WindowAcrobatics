@@ -11,7 +11,8 @@
 		"pageDict",
 		"arrowDown",
 		"currentPage",
-		"arrowUp" ],
+		"arrowUp",
+		"numberOfWindowsOnPage" ],
 	"name" : "WAExpose",
 	"pools" : [
 		 ],

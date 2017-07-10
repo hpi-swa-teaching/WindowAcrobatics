@@ -10,5 +10,5 @@ initializeDownButton
 		send: #nextPage
 		to: self.
 	
-			
-	self addMorphFront: arrowDown.
+
+	

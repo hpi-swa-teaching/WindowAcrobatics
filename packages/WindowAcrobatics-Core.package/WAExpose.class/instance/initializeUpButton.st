@@ -10,5 +10,4 @@ initializeUpButton
 		send: #previousPage
 		to: self.
 	
-			
-	self addMorphFront: arrowUp.
+	

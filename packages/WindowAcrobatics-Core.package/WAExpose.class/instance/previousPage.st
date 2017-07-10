@@ -7,8 +7,6 @@ previousPage
 	
 	(self pageDict at: self currentPage) do: [:thmb | self addMorphBack: thmb].
 	
-	self selectWindow: (self pageDict at: self currentPage) first.
-	
-	self currentPage == 1 ifTrue: [arrowUp delete].
+	self selectWindow: (self pageDict at: self currentPage) last.
 	
 	self updateLayout.

@@ -1,22 +1,22 @@
 handling
 handle: aKeyboardEvent
 
-	|alignNotHandled dashboardNotHandled switchingNotHandled|
+	|alignHandled dashboardHandled switchingHandled|
 	
-	alignNotHandled := true.
-	dashboardNotHandled := true.
-	switchingNotHandled := true.
+	alignHandled := true.
+	dashboardHandled := true.
+	switchingHandled := true.
 
 	self alignmentActive ifTrue: [
-		(self descriptionToActionBindings at: (self keyToDescriptionBindingsAlignment at: aKeyboardEvent keyString ifAbsent: [alignNotHandled := false]) ifAbsent: []) value.
+		(self descriptionToActionBindings at: (self keyToDescriptionBindingsAlignment at: aKeyboardEvent keyString ifAbsent: [alignHandled := false]) ifAbsent: []) value.
 		].
 	
 	self dashboardActive ifTrue: [
-		(self descriptionToActionBindings at: (self keyToDescriptionBindingsDashboard at: aKeyboardEvent keyString ifAbsent: [dashboardNotHandled := false.]) ifAbsent: []) value.
+		(self descriptionToActionBindings at: (self keyToDescriptionBindingsDashboard at: aKeyboardEvent keyString ifAbsent: [dashboardHandled := false.]) ifAbsent: []) value.
 		].
 
 	(self switchingActive) ifTrue: [
-		(self descriptionToActionBindings at: (self keyToDescriptionBindingsSwitching at: aKeyboardEvent keyString ifAbsent: [switchingNotHandled := false.]) ifAbsent: []) value.
+		(self descriptionToActionBindings at: (self keyToDescriptionBindingsSwitching at: aKeyboardEvent keyString ifAbsent: [switchingHandled := false.]) ifAbsent: []) value.
 		].
 	
-	^ (alignNotHandled or: dashboardNotHandled or: switchingNotHandled) and: (self alignmentActive and: self dashboardActive and: self switchingActive)
+	^ (alignHandled and: self alignmentActive) or: (dashboardHandled and: self dashboardActive) or: (switchingHandled and: self switchingActive)

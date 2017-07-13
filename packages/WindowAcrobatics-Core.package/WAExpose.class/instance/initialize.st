@@ -12,6 +12,8 @@ initialize
 	self eventHandler on: Character linefeed send: #activateWindow to: self."
 	self eventHandler on: Character cr send: #activateWindow to: self.
 
+	self eventHandler on: Character arrowUp send: #previousPage to: self.
+	self eventHandler on: Character arrowDown send: #nextPage to: self.
 	self eventHandler on: Character arrowRight send: #selectNextWindow to: self.
 	self eventHandler on: Character arrowLeft send: #selectPreviousWindow to: self.
 

@@ -1,3 +1,4 @@
 accessing
 numberOfWindowsOnPage
-	^ numberOfWindowsOnPage
+
+	^ numberOfWindowsOnPage.

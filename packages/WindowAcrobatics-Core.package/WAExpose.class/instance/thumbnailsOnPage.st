@@ -1,4 +1,4 @@
-as yet unclassified
+pages
 thumbnailsOnPage
 	
-	^ (self submorphs copyWithout: selectionRectangle) intersection: ((self submorphs copyWithout: arrowDown) intersection: (self submorphs copyWithout: arrowUp)).
+	^ self submorphs reject: [:each | (Array with: selectionRectangle  with: arrowDown with: arrowUp)  includes: each].

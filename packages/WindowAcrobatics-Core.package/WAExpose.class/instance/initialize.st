@@ -7,9 +7,6 @@ initialize
 	
 	self eventHandler: UiEventHandler new.
 	self eventHandler on: Character escape send: #delete to: self.
-	
-	"self eventHandler on: Character enter send: #activateWindow to: self.
-	self eventHandler on: Character linefeed send: #activateWindow to: self."
 	self eventHandler on: Character cr send: #activateWindow to: self.
 
 	self eventHandler on: Character arrowUp send: #previousPage to: self.
@@ -37,3 +34,4 @@ initialize
 	self initializeThumbnails.
 	self initializeUpButton.
 	self initializeDownButton.
+	self initializeVisualization.

@@ -12,7 +12,8 @@
 		"arrowDown",
 		"currentPage",
 		"arrowUp",
-		"numberOfWindowsOnPage" ],
+		"numberOfWindowsOnPage",
+		"visualization" ],
 	"name" : "WAExpose",
 	"pools" : [
 		 ],

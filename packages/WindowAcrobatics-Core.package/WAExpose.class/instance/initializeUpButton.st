@@ -1,4 +1,4 @@
-as yet unclassified
+pages
 initializeUpButton
 	
 	arrowUp :=  (('<font color="#FFFFFF"><b>UP</b></font>' asHtmlText asMorph margins: 10@3; imageForm) asMorph

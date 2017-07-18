@@ -19,10 +19,11 @@ updateLayout
 	
 	self fullBounds.
 	
-	self currentPage < self numberPages ifTrue: [self addMorphFront: arrowDown].
-	self currentPage > 1 ifTrue: [self addMorphFront: arrowUp].
+	self isLastPage ifFalse: [self addMorphFront: arrowDown].
+	self isFirstPage ifFalse: [self addMorphFront: arrowUp].
 	
 	self selectWindow: self selectedWindow.
-
+	
 	self comeToFront.
+	self visualization comeToFront.
 	self grabKeyboard.

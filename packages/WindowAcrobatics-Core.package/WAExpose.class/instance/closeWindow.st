@@ -8,12 +8,15 @@ closeWindow
 		
 		(self pageDict at: self currentPage) remove: thumbnail.
 		
-		self currentPage < self numberPages ifTrue: [self windowFromNextPage: self currentPage + 1. self addMorphBack: (self pageDict at: self currentPage) last].
-		
-		self selectedWindow == thumbnail
-			ifTrue: [self numberPages = 1 ifTrue: [self delete. ^ self]
-										    ifFalse: [self pageDict removeKey: self currentPage. self previousPage. ^self]].
-		
 		thumbnail delete.
+		
+		self isLastPage ifFalse: [self windowFromNextPage: self currentPage + 1. self addMorphBack: (self pageDict at: self currentPage) last] 
+		ifTrue: [
+			" check whether there is only one window left "
+			self selectedWindow == thumbnail 
+			ifTrue: [self isFirstPage
+				ifTrue: [self delete. ^ self]  
+				ifFalse: [self deletePageNumberAt: self currentPage. self pageDict removeKey: self currentPage. self previousPage. ^self]]
+			].
 		
 		self updateLayout].

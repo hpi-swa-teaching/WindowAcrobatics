@@ -4,5 +4,5 @@ setLayout
 	^ self layoutPolicy: TableLayout new; 
 			listDirection: #leftToRight;
 			listCentering: #center;
-			layoutInset: 10; 
+			layoutInset: 20; 
 			cellInset: 5.

@@ -2,16 +2,16 @@
 	"class" : {
 		"new:" : "adz 6/22/2017 00:46" },
 	"instance" : {
-		"addNumberToSign:colored:" : "NS 6/22/2017 11:53",
+		"addNumberToSign:colored:" : "adz 7/18/2017 00:58",
 		"countDown" : "adz 6/22/2017 00:47",
 		"defaultColor" : "NS 6/22/2017 11:57",
 		"defaultExtent" : "NS 6/22/2017 11:56",
-		"initialize:" : "NS 6/22/2017 12:02",
+		"initialize:" : "adz 7/17/2017 23:27",
 		"number" : "adz 6/21/2017 14:17",
 		"number:" : "adz 6/21/2017 14:17",
 		"numberOfSpaces" : "NS 6/22/2017 11:59",
 		"seconds" : "adz 6/21/2017 14:24",
 		"seconds:" : "adz 6/21/2017 14:24",
-		"setLayout" : "NS 6/22/2017 11:58",
+		"setLayout" : "adz 7/18/2017 01:00",
 		"startSeconds" : "NS 6/22/2017 11:54",
 		"step" : "adz 6/21/2017 14:23" } }

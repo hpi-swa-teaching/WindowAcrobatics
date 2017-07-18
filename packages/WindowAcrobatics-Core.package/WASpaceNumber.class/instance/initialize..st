@@ -4,8 +4,6 @@ initialize: aNumber
 	super initialize.
 	self seconds: self startSeconds;
 		extent: self defaultExtent;
-		clipSubmorphs: true;
-		disableTableLayout: true;
 		color: self defaultColor;
 		setLayout.
 	

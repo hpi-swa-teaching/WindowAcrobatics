@@ -1,4 +1,4 @@
-as yet unclassified
+pages
 numberPages
 
 	^ self pageDict size.

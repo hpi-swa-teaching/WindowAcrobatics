@@ -1,4 +1,4 @@
-as yet unclassified
+windows-handling
 selectedWindow
 
 	^ selectionRectangle valueOfProperty: #target ifAbsent: []

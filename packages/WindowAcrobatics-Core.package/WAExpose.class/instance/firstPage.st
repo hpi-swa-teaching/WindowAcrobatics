@@ -1,4 +1,4 @@
 pages
-isFirstPage
+firstPage
 
 	^ self currentPage <= 1.

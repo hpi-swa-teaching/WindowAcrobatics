@@ -1,4 +1,4 @@
-as yet unclassified
+windows-handling
 closeWindow
 
 	self selectedWindow ifNotNil: [:thumbnail |
@@ -7,16 +7,10 @@ closeWindow
 		self selectNextWindow.
 		
 		(self pageDict at: self currentPage) remove: thumbnail.
-		
 		thumbnail delete.
 		
-		self isLastPage ifFalse: [self windowFromNextPage: self currentPage + 1. self addMorphBack: (self pageDict at: self currentPage) last] 
-		ifTrue: [
-			" check whether there is only one window left "
-			self selectedWindow == thumbnail 
-			ifTrue: [self isFirstPage
-				ifTrue: [self delete. ^ self]  
-				ifFalse: [self deletePageNumberAt: self currentPage. self pageDict removeKey: self currentPage. self previousPage. ^self]]
-			].
+		self lastPage ifTrue: [self selectedWindow == thumbnail ifTrue: [self firstPage ifTrue: [self delete. ^ self]  
+				ifFalse: [self deletePageInVisualization: self currentPage. self pageDict removeKey: self currentPage. self previousPage. ^self]]]
+		ifFalse: [self windowFromNextPage: self currentPage + 1. self addMorphBack: (self pageDict at: self currentPage) last].
 		
 		self updateLayout].

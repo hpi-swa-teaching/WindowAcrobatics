@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 intoWorld: world
 
 	super intoWorld: world.

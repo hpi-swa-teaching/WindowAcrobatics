@@ -1,5 +1,5 @@
 visualization
-addNumberToSign: aNumber colored: aColor
+addNumberToVisualization: aNumber colored: aColor
 
 	self visualization addMorphBack: (StringMorph new contents: aNumber asString;
 			color: aColor;

@@ -1,4 +1,4 @@
-as yet unclassified
+windows-handling
 selectPreviousWindow
 
 	self thumbnailsOnPage ifNotEmpty: [

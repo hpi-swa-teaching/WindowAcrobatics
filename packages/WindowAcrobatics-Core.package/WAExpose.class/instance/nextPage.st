@@ -1,18 +1,19 @@
 pages
 nextPage
 	
-	self isLastPage ifFalse: [
-		self thumbnailsOnPage do: [:thmb|thmb delete].
+	self lastPage ifFalse: [
 	
-		(self visualization submorphs at: self currentPage) color: Color gray.
+		self deleteThumbnailsOnCurrentPage.
+		
+		self equatePageInVisualization.
 			
 		self currentPage: self currentPage + 1. 
 	
-		(self pageDict at: self currentPage) do: [:thmb | self addMorphBack: thmb].
+		self addThumbnailsToCurrentPage.
 	
 		self selectWindow: (self pageDict at: self currentPage) first.
 		
-		(self visualization submorphs at: self currentPage) color: Color white.
+		self highlightPageInVisualiszation.
 			
 		self updateLayout.
 	].

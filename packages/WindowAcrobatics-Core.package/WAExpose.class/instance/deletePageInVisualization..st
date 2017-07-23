@@ -1,4 +1,4 @@
 visualization
-deletePageNumberAt: aNumber
+deletePageInVisualization: aNumber
 
 	(self visualization submorphs at: aNumber) delete.

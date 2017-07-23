@@ -1,9 +1,10 @@
-as yet unclassified
+initialization
 initialize
 
 	super initialize.
 	
 	self color: (Color black alpha: 0.6).
+	self numberOfWindowsOnPage: 8.
 	
 	self eventHandler: UiEventHandler new.
 	self eventHandler on: Character escape send: #delete to: self.
@@ -28,10 +29,6 @@ initialize
 		wrapDirection: #topToBottom;
 		cellPositioning: #topCenter.
 	
-	self numberOfWindowsOnPage: 8.
-	self pageDict: Dictionary new.
 	self initializeSelectionRectangle.
 	self initializeThumbnails.
-	self initializeUpButton.
-	self initializeDownButton.
 	self initializeVisualization.

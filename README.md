@@ -4,7 +4,7 @@
 
 ## Beautiful Window Management in Squeak
 
-![Window Acrobatics Title Image](https://github.com/HPI-SWA-Teaching/SWT17-Project-08/blob/master/images/WAExpose.png)
+![Window Acrobatics Title Image](https://user-images.githubusercontent.com/15236859/28661227-4b0bef3e-72b6-11e7-919f-e0f99490d8e4.png)
 
 Window Acrobatics bundles a number of ways you are used to interacting with your windows and puts them right into your Squeak image.
 Current components of Window Acrobatics include

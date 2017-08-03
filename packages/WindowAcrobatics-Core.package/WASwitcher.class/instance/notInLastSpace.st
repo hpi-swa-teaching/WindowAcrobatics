@@ -1,4 +1,4 @@
 spaces
 notInLastSpace
 
-	^ WASwitcher spaceNumber ~= self numberOfSpaces
+	^ self class spaceNumber ~= self numberOfSpaces

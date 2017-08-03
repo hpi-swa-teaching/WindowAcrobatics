@@ -3,4 +3,4 @@ delete
 
 	super delete. 
 	self visualization delete.
-	WAExpose hasDashboard: false.
+	self class hasDashboard: false.

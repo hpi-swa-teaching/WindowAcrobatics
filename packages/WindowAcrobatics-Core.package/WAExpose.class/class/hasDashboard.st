@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 hasDashboard 
 	HasDashboard ifNil: [HasDashboard := false].
 	^ HasDashboard 

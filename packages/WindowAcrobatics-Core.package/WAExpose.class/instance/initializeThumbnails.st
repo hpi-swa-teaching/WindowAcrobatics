@@ -29,10 +29,10 @@ initializeThumbnails
 	self initializePageDictionary: thumbnails.
 	
 	"Select the next possible window."
-	selectionRectangle goBehind.
+	self selectionRectangle goBehind.
 	
 	thumbnails
-		ifEmpty: [selectionRectangle hide. self currentPage: 0]
+		ifEmpty: [self selectionRectangle hide. self currentPage: 0]
 		ifNotEmpty: [
 			self currentPage: 1.
 			self addThumbnailsToCurrentPage.

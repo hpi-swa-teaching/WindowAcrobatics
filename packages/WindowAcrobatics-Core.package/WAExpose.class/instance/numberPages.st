@@ -1,4 +1,4 @@
 pages
 numberPages
 
-	^ self pageDict size.
+	^ self pageDict size

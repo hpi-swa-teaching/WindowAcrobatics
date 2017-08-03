@@ -1,4 +1,4 @@
 windows-handling
 selectedWindow
 
-	^ selectionRectangle valueOfProperty: #target ifAbsent: []
+	^ self selectionRectangle valueOfProperty: #target ifAbsent: []

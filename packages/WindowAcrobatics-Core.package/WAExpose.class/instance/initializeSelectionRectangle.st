@@ -1,7 +1,7 @@
 initialization
 initializeSelectionRectangle
 	
-	selectionRectangle := Morph new
+	self selectionRectangle: (Morph new
 		addMorphBack: (('<font color="#FFFFFF"><b>x</b></font>' asHtmlText asMorph margins: 10@3; imageForm) asMorph
 			setToAdhereToEdge: #topLeft;
 			yourself);
@@ -9,7 +9,7 @@ initializeSelectionRectangle
 		borderColor: Color white;
 		disableTableLayout: true;
 		color: Color transparent;
-		yourself.
+		yourself).
 
 	selectionRectangle submorphs first
 		on: #click

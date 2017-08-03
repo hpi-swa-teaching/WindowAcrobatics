@@ -1,4 +1,4 @@
 spaces
 decreaseSpaceNumber
 
-	WASwitcher spaceNumber: WASwitcher spaceNumber - 1
+	self class spaceNumber: self class spaceNumber - 1

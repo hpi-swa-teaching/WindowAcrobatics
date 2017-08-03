@@ -5,13 +5,13 @@ updateLayout
 	
 	self topLeft: self world topLeft.
 	self extent: self world extent.
-	selectionRectangle delete.
+	self selectionRectangle delete.
 	
 	self fullBounds.
 	self submorphBounds in: [:r |
 		self layoutInset: (self width - r width // 2) @ (self height - r height // 2)].
 	
-	self addMorphBack: selectionRectangle.
+	self addMorphBack: self selectionRectangle.
 	self fullBounds.
 	self selectWindow: self selectedWindow.
 	

@@ -1,7 +1,6 @@
-as yet unclassified
+initializing
 open
 	self hasDashboard ifFalse: [
 			self hasDashboard: true.
-			^ self new openInWorld.
-		]			
+			^ self new openInWorld ]			
 	

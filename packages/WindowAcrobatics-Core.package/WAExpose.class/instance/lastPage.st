@@ -1,4 +1,4 @@
 pages
 lastPage
 
-	^ self currentPage = self numberPages.
+	^ self currentPage = self numberPages

@@ -5,5 +5,5 @@ alignLastUsedWindowsKey
 		description: 'Registers the keyboard shortcut to align the four last used windows in a grid. Cmd for Mac OS sytems and Alt for Windows and Unix systems'
 		type: #String>
 		
-	^ self stripOffCmd: (self keyToDescriptionBindingsAlignment keyAtValue: 'alignLastUsedWindows').
+	^ self stripOffCmd: (self keyToDescriptionBindingsAlignment keyAtValue: 'alignLastUsedWindows')
 	

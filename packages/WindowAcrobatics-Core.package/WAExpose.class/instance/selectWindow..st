@@ -2,5 +2,5 @@ windows-handling
 selectWindow: thumbnail
 
 	thumbnail ifNotNil: [
-		selectionRectangle bounds: (thumbnail bounds outsetBy: self selectionRectancleOutset) ].
-	selectionRectangle setProperty: #target toValue: thumbnail. 
+		self selectionRectangle bounds: (thumbnail bounds outsetBy: self selectionRectancleOutset) ].
+	self selectionRectangle setProperty: #target toValue: thumbnail. 

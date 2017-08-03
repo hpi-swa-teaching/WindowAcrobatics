@@ -1,4 +1,4 @@
 spaces
 notInFirstSpace
 
-	^ WASwitcher spaceNumber ~= 1
+	^ self class spaceNumber ~= 1

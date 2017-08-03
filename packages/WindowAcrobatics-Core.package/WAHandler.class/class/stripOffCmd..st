@@ -1,4 +1,4 @@
 preferences
 stripOffCmd: aString
 
-	^ aString copyFrom: 6 to: aString size - 1.
+	^ aString copyFrom: 6 to: aString size - 1

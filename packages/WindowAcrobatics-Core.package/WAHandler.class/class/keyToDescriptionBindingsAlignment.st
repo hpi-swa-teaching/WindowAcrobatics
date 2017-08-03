@@ -1,6 +1,6 @@
-accessing
+preferences
 keyToDescriptionBindingsAlignment
 
-	KeyToDescriptionBindingsAlignment ifNil: [KeyToDescriptionBindingsAlignment := WAHandler defaultKeybindingsAlignment].
+	KeyToDescriptionBindingsAlignment ifNil: [KeyToDescriptionBindingsAlignment := WAHandler instance defaultKeybindingsAlignment].
 	
 	^ KeyToDescriptionBindingsAlignment

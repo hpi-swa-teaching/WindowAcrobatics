@@ -1,4 +1,4 @@
 visualization
 defaultVisualizationPosition
 
-	^ ActiveWorld extent x - 45 @ 0.
+	^ ActiveWorld width - 45 @ 0

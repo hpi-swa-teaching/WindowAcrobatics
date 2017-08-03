@@ -1,4 +1,4 @@
-initializing
+defaults
 defaultKeybindingsDashboard
 
 	^ Dictionary new 

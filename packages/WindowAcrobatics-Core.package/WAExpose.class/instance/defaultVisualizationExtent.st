@@ -1,4 +1,4 @@
 visualization
 defaultVisualizationExtent
 
-	^  45@ActiveWorld extent y.
+	^  45 @ ActiveWorld height  

@@ -1,3 +1,3 @@
-accessing
+preferences
 numberOfLastWindows: anObject
 	NumberOfLastWindows := anObject

@@ -1,4 +1,4 @@
-accessing
+preferences
 numberOfLastWindows
 
 	NumberOfLastWindows ifNil: [NumberOfLastWindows := 4].

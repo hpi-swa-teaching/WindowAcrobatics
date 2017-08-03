@@ -1,3 +1,3 @@
-accessing
+preferences
 alignmentActive: anObject
 	AlignmentActive := anObject

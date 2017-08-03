@@ -1,40 +1,32 @@
 *WindowAcrobatics-Core-Events-override
-filterEvent: mouseOrKeyboardEvent for: anObject
+filterEvent: aKeyboardEvent for: anObject
+	"Provide keyboard shortcuts."
 
-	"1) Mouse shortcuts"
-	mouseOrKeyboardEvent isMouse ifTrue: [
+	"Delegate keyboard shortcuts to my docking bars."
+	self submorphsDo: [:ea | ea isDockingBar ifTrue: [
+		ea filterEvent: aKeyboardEvent for: anObject. "No support for converting events here!"
+		aKeyboardEvent wasIgnored ifTrue: [^ aKeyboardEvent "early out"]]].
 	
-		"Only accept mouse down, no up."
-		mouseOrKeyboardEvent isMouseDown
-			ifFalse: [^ mouseOrKeyboardEvent].
-	
-		mouseOrKeyboardEvent blueButtonPressed
-			ifTrue: [	self tryInvokeHalo: mouseOrKeyboardEvent]
-			ifFalse: [mouseOrKeyboardEvent controlKeyPressed
-				ifTrue: [self tryInvokeMetaMenu: mouseOrKeyboardEvent]].
-
-		^ mouseOrKeyboardEvent].
-	
-	"2) Keyboard shortcuts"
-	mouseOrKeyboardEvent isKeyboard ifTrue: [
-
-		"Delegate keyboard shortcuts to my docking bars."
-		self submorphsDo: [:ea | ea isDockingBar ifTrue: [
-			ea filterEvent: mouseOrKeyboardEvent for: anObject. "No support for converting events here!"
-			mouseOrKeyboardEvent wasIgnored ifTrue: [^ mouseOrKeyboardEvent "early out"]]].
-		
-		"Only accept key strokes as shortcuts, no down/up."
-		mouseOrKeyboardEvent isKeystroke
-			ifFalse: [^ mouseOrKeyboardEvent].
-			
-		"Window Acrobatics Key Handling"
-		mouseOrKeyboardEvent commandKeyPressed ifTrue: [
-		(WAHandler handle: mouseOrKeyboardEvent) ifTrue: [^ mouseOrKeyboardEvent ignore "hit!"].
+	aKeyboardEvent isKeystroke
+		ifFalse: [^ aKeyboardEvent].
+ 	
+	aKeyboardEvent commandKeyPressed ifTrue: [
+		(WAHandler new handle: aKeyboardEvent) ifTrue: [^ aKeyboardEvent ignore "hit!"].
 		].
 
-		self tryInvokeKeyboardShortcut: mouseOrKeyboardEvent.
-	
-		^ mouseOrKeyboardEvent].
-	
-	"Should not be necessary if this filter is correctly configured."
-	^ mouseOrKeyboardEvent
+	aKeyboardEvent commandKeyPressed ifTrue: [
+		aKeyboardEvent keyCharacter caseOf: {
+			[$R] -> [Utilities browseRecentSubmissions. Transcript show: 'Hello'].
+			[$L] -> [self findAFileList: aKeyboardEvent].
+			[$O] -> [self findAMonticelloBrowser].
+			[$P] -> [self findAPreferencesPanel: aKeyboardEvent].
+			"[$Z] -> [ChangeList browseRecentLog]."
+			[$]] -> [Smalltalk snapshot: true andQuit: false].
+			[$+] -> [Preferences increaseFontSize].
+			[$-] -> [Preferences decreaseFontSize].
+			[$=] -> [Preferences restoreDefaultFonts].
+		} otherwise: [^ aKeyboardEvent "no hit"].
+		
+		^ aKeyboardEvent ignore "hit!"].
+ 
+	^ aKeyboardEvent "no hit"

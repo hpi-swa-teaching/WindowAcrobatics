@@ -2,6 +2,6 @@ initialization
 initialize 
 
 	super initialize.
-	
-	self openInWorld;
+	self 
+		openInWorld;
 		hide.

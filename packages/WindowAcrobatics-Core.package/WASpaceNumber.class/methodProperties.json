@@ -2,10 +2,10 @@
 	"class" : {
 		"new:" : "adz 6/22/2017 00:46" },
 	"instance" : {
-		"addNumberToSign:colored:" : "adz 7/18/2017 00:58",
-		"countDown" : "adz 6/22/2017 00:47",
+		"addNumberToSign:colored:" : "jh 8/3/2017 11:29",
+		"countDown" : "jh 8/3/2017 11:30",
 		"defaultColor" : "NS 6/22/2017 11:57",
-		"defaultExtent" : "NS 6/22/2017 11:56",
+		"defaultExtent" : "jh 8/3/2017 11:30",
 		"initialize:" : "adz 7/17/2017 23:27",
 		"number" : "adz 6/21/2017 14:17",
 		"number:" : "adz 6/21/2017 14:17",

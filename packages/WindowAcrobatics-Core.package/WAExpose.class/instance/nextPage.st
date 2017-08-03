@@ -2,19 +2,13 @@ pages
 nextPage
 	
 	self lastPage ifFalse: [
-	
-		self deleteThumbnailsOnCurrentPage.
-		
-		self equatePageInVisualization.
-			
-		self currentPage: self currentPage + 1. 
-	
-		self addThumbnailsToCurrentPage.
-	
-		self selectWindow: (self pageDict at: self currentPage) first.
-		
-		self highlightPageInVisualiszation.
-			
-		self updateLayout.
+		self 
+			deleteThumbnailsOnCurrentPage;
+			changePageVisualizationTo: Color gray;
+			currentPage: (self currentPage + 1);
+			addThumbnailsToCurrentPage;
+			selectWindow: ((self pageDict at: self currentPage) first);
+			changePageVisualizationTo: Color white;
+			updateLayout.
 	].
 	

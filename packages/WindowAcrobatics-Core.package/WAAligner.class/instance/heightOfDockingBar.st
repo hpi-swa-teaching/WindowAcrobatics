@@ -2,7 +2,7 @@ util
 heightOfDockingBar
 
 	(ActiveWorld submorphs select: [ :window | window isDockingBar ])
-		ifNotEmpty: [ ^ ((ActiveWorld submorphs select: [ :window | window isDockingBar ]) at: 1) height ]
+		ifNotEmpty: [ ^ ((ActiveWorld submorphs select: [ :window | window isDockingBar ]) first) height ]
 		ifEmpty: [ ^ 0 ].
 	
 	

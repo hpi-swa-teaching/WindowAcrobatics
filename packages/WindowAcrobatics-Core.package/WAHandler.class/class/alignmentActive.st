@@ -1,4 +1,4 @@
-accessing
+preferences
 alignmentActive
 
 	AlignmentActive ifNil: [AlignmentActive := false].

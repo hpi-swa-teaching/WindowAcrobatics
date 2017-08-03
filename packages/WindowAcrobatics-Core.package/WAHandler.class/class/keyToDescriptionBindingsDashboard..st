@@ -1,3 +1,3 @@
-accessing
+preferences
 keyToDescriptionBindingsDashboard: anObject
 	KeyToDescriptionBindingsDashboard := anObject

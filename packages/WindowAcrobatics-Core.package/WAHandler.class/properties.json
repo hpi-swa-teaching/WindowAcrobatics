@@ -3,19 +3,19 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Aligner",
 		"AlignmentActive",
 		"DashboardActive",
 		"DescriptionToActionBindings",
+		"Instance",
 		"KeyToDescriptionBindingsAlignment",
 		"KeyToDescriptionBindingsDashboard",
 		"KeyToDescriptionBindingsSwitching",
 		"NumberOfLastWindows",
-		"Switcher",
 		"SwitchingActive" ],
 	"commentStamp" : "jh 8/3/2017 11:14",
 	"instvars" : [
-		 ],
+		"aligner",
+		"switcher" ],
 	"name" : "WAHandler",
 	"pools" : [
 		 ],

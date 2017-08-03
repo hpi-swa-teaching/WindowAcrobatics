@@ -1,8 +1,4 @@
-windowswitching
+switching
 selectLastWindow
 	
-	| windowsInSpace |
-	
-	windowsInSpace := self windowsInCurrentSpace.
-	windowsInSpace ifNotEmpty: [windowsInSpace size > 1 ifTrue: [
-			self switchLastAndCurrent: windowsInSpace.]].
+	self windowsInCurrentSpace size > 1 ifTrue: [ self switchLastAndCurrent: self windowsInCurrentSpace ].

@@ -1,4 +1,4 @@
 helper
 handOverRightBorder
 
-	^ ActiveHand position x + 3 >= ActiveWorld extent x.
+	^ ActiveHand position x + self handOffset >= ActiveWorld extent x

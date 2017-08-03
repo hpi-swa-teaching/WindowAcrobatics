@@ -5,4 +5,4 @@ setVisualizationLayout
 			listDirection: #topToBottom;
 			listCentering: #center;
 			layoutInset: 20; 
-			cellInset: 10.
+			cellInset: 10

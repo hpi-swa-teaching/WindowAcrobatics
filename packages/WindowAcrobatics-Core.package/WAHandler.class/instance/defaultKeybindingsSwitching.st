@@ -1,4 +1,4 @@
-initializing
+defaults
 defaultKeybindingsSwitching
 
 	^ Dictionary new 

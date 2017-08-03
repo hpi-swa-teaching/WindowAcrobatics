@@ -1,4 +1,4 @@
 spaces
 handOverLeftBorder
 
-	^ ActiveHand position x - 3  <= 0.
+	^ ActiveHand position x - self handOffset  <= 0

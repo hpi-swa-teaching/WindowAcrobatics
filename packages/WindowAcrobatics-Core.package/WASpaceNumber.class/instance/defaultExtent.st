@@ -1,6 +1,6 @@
 defaults
 defaultExtent
 
-	^  ActiveWorld extent x@70.
+	^  ActiveWorld extent x @ 70
 
 	

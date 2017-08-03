@@ -1,3 +1,3 @@
-accessing
+preferences
 dashboardActive: anObject
 	DashboardActive := anObject

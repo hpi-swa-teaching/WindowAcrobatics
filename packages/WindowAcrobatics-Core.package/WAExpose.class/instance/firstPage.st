@@ -1,4 +1,4 @@
 pages
 firstPage
 
-	^ self currentPage <= 1.
+	^ self currentPage <= 1

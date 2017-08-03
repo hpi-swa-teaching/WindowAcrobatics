@@ -1,4 +1,4 @@
-helper
+stepping
 step
 	
-	^ self moveToSpaceByWindow.
+	self moveToSpaceByWindowDrag

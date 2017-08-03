@@ -1,4 +1,4 @@
-initializing
+defaults
 defaultKeybindingsAlignment
 	
 	| keyBindings |
@@ -10,8 +10,12 @@ defaultKeybindingsAlignment
 			add: '<Cmd-k>'->'alignLastUsedWindows';			
 			yourself.
 		
-	(Smalltalk platformName = 'Mac OS') ifFalse: [keyBindings add: '<Cmd-up>'->'alignTop';
-			add: '<Cmd-down>'->'alignBottom'] ifTrue: [keyBindings add: '<Cmd-home>'->'alignTop';
+	(Smalltalk platformName = 'Mac OS') 
+		ifFalse: [keyBindings 
+			add: '<Cmd-up>'->'alignTop';
+			add: '<Cmd-down>'->'alignBottom'] 
+		ifTrue: [keyBindings 
+			add: '<Cmd-home>'->'alignTop';
 			add: '<Cmd-end>'->'alignBottom'].
 		
 	^keyBindings

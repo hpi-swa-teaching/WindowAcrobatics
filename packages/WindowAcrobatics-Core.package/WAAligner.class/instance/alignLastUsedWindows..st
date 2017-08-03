@@ -1,5 +1,7 @@
-as yet unclassified
+handling
 alignLastUsedWindows: aNumber
 
-	aNumber <= 2 ifTrue: [self alignLastTwoWindows. ^ true].
-	aNumber <= 4 ifTrue: [self alignLastFourWindows. ^ true] ifFalse: [self alignLastSixWindows]. 
+	aNumber <= 2 ifTrue: [ ^ self alignLastTwoWindows ].
+	aNumber <= 4 
+		ifTrue: [ ^ self alignLastFourWindows ]
+		ifFalse: [ ^ self alignLastSixWindows ]. 

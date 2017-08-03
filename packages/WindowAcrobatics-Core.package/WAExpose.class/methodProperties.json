@@ -19,13 +19,12 @@
 		"drawOn:" : "adz 7/23/2017 12:37",
 		"equatePageInVisualization" : "adz 7/23/2017 12:17",
 		"firstPage" : "adz 7/21/2017 15:11",
-		"getWindowsInCurrentSpace" : "adz 7/23/2017 12:50",
 		"highlightPageInVisualiszation" : "adz 7/23/2017 12:10",
 		"initialize" : "adz 7/23/2017 12:26",
 		"initializeLabelMorph:" : "adz 7/23/2017 12:24",
 		"initializePageDictionary:" : "adz 7/23/2017 12:28",
 		"initializeSelectionRectangle" : "adz 7/6/2017 16:08",
-		"initializeThumbnails" : "adz 7/23/2017 12:30",
+		"initializeThumbnails" : "jh 8/3/2017 10:51",
 		"initializeVisualization" : "adz 7/21/2017 15:05",
 		"intoWorld:" : "adz 7/10/2017 22:22",
 		"lastPage" : "adz 7/21/2017 15:11",
@@ -47,4 +46,5 @@
 		"updateLayout" : "adz 7/23/2017 12:42",
 		"visualization" : "adz 7/17/2017 23:21",
 		"visualization:" : "adz 7/17/2017 23:21",
-		"windowFromNextPage:" : "adz 7/23/2017 12:38" } }
+		"windowFromNextPage:" : "adz 7/23/2017 12:38",
+		"windowsInCurrentSpace" : "jh 8/3/2017 10:51" } }

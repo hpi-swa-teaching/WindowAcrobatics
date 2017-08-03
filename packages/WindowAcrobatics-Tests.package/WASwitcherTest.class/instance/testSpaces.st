@@ -7,10 +7,10 @@ testSpaces
 
 	WASwitcher new spaceToRight.
 	
-	self assert: (((WAAligner new getWindowsInCurrentSpace) includes: window) not) description: 'Spaces failed.'.
+	self assert: (((WAAligner new windowsInCurrentSpace) includes: window) not) description: 'Spaces failed.'.
 	
 	WASwitcher new spaceToLeft.
 	
-	self assert: ((WAAligner new getWindowsInCurrentSpace) includes: window) description: 'Spaces failed.'.
+	self assert: ((WAAligner new windowsInCurrentSpace) includes: window) description: 'Spaces failed.'.
 	
 	window delete.

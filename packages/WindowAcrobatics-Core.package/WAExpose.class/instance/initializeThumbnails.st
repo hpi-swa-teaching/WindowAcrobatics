@@ -3,7 +3,7 @@ initializeThumbnails
 
 	| windows thumbnails |
 	
-	WAHandler switchingActive ifTrue: [windows := self getWindowsInCurrentSpace] 
+	WAHandler switchingActive ifTrue: [windows := self windowsInCurrentSpace] 
 								ifFalse: [windows := ActiveWorld submorphs select: [:m | m isSystemWindow]].
 								
 	thumbnails := OrderedCollection new.

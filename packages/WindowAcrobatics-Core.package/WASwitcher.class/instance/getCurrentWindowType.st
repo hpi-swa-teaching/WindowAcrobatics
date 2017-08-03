@@ -1,6 +1,6 @@
 as yet unclassified
 getCurrentWindowType
 
-	(self getWindowsInCurrentSpace) ifEmpty: [ ^ false.].
+	(self windowsInCurrentSpace) ifEmpty: [ ^ false.].
 
-	^ (self getWindowsInCurrentSpace first) model.
+	^ (self windowsInCurrentSpace first) model.

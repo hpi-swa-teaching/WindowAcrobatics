@@ -1,0 +1,1 @@
+A WAAligner provides functionality to change positions and extents of windows effectively. It is part of WindowAcrobatics.

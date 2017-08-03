@@ -1,0 +1,1 @@
+A WASwitcher provides functionality to switch between different windows. It is part of WindowAcrobatics.

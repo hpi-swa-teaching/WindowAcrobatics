@@ -1,0 +1,1 @@
+A WAExpose provides an interactive overview of all open windows in your image. It is part of WindowAcrobatics.

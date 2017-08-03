@@ -1,0 +1,1 @@
+A WASpaceNumber is a Morph that indicates the current space to a user.

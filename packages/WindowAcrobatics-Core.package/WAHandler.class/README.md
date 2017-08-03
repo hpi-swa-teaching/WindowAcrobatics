@@ -1,0 +1,1 @@
+A WAHandler delegates user requests to the right component of WindowAcrobatics, and saves users preferences.

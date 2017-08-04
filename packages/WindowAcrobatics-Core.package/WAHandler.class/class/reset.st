@@ -6,4 +6,3 @@ reset
 	self keyToDescriptionBindingsAlignment: nil.
 	self instance switcher delete.
 	self instance switcher: nil.
-	self instance delete.

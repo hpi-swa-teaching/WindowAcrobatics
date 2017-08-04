@@ -6,4 +6,4 @@ cycleWindows
 		description: 'Registers the keyboard shortcut to cycle through windows of the current type. Cmd for Mac OS sytems and Alt for Windows and Unix systems'   
 		type: #String>     
 		
-	^ (self stripOffCmd: (self keyToDescriptionBindingsSwitching keyAtValue: 'cycle')) asLowercase
+	^ (self stripOffCmd: (self keyToDescriptionBindingsSwitching keyAtValue: #cycle)) asLowercase

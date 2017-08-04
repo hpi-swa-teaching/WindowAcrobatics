@@ -1,6 +1,6 @@
 preferences
 keyToDescriptionBindingsDashboard
 	
-	KeyToDescriptionBindingsDashboard ifNil: [KeyToDescriptionBindingsDashboard := WAHandler instance defaultKeybindingsDashboard].
+	KeyToDescriptionBindingsDashboard ifNil: [KeyToDescriptionBindingsDashboard := self instance defaultKeybindingsDashboard].
 	
 	^ KeyToDescriptionBindingsDashboard

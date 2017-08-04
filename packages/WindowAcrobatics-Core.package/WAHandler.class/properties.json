@@ -5,7 +5,6 @@
 	"classvars" : [
 		"AlignmentActive",
 		"DashboardActive",
-		"DescriptionToActionBindings",
 		"Instance",
 		"KeyToDescriptionBindingsAlignment",
 		"KeyToDescriptionBindingsDashboard",

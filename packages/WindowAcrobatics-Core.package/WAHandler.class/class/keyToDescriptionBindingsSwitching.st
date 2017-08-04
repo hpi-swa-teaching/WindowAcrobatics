@@ -1,6 +1,6 @@
 preferences
 keyToDescriptionBindingsSwitching
 
-	KeyToDescriptionBindingsSwitching ifNil: [KeyToDescriptionBindingsSwitching  := WAHandler instance defaultKeybindingsSwitching].
+	KeyToDescriptionBindingsSwitching ifNil: [KeyToDescriptionBindingsSwitching  := self instance defaultKeybindingsSwitching].
 	
 	^ KeyToDescriptionBindingsSwitching 

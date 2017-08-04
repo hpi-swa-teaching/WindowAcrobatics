@@ -1,6 +1,6 @@
 preferences
 keyToDescriptionBindingsAlignment
 
-	KeyToDescriptionBindingsAlignment ifNil: [KeyToDescriptionBindingsAlignment := WAHandler instance defaultKeybindingsAlignment].
+	KeyToDescriptionBindingsAlignment ifNil: [KeyToDescriptionBindingsAlignment := self instance defaultKeybindingsAlignment].
 	
 	^ KeyToDescriptionBindingsAlignment

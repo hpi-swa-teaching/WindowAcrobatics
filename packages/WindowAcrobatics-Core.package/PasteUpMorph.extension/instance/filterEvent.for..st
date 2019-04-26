@@ -2,6 +2,8 @@
 filterEvent: aKeyboardEvent for: anObject
 	"Provide keyboard shortcuts."
 
+	aKeyboardEvent isKeyboard ifFalse: [^ aKeyboardEvent].
+	
 	"Delegate keyboard shortcuts to my docking bars."
 	self submorphsDo: [:ea | ea isDockingBar ifTrue: [
 		ea filterEvent: aKeyboardEvent for: anObject. "No support for converting events here!"

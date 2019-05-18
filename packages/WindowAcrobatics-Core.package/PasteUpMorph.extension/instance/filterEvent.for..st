@@ -1,3 +1,4 @@
+*WindowAcrobatics-Core-Events-override
 filterEvent: mouseOrKeyboardEvent for: anObject
 
 	"1) Mouse shortcuts"

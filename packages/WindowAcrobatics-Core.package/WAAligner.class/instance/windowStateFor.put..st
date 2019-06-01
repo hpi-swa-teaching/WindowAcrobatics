@@ -1,6 +1,5 @@
 handling
 windowStateFor: aWindow put: aState
 
-	^ self windowStates
-		at: aWindow
-		put: aState
+	lastBounds at: aWindow put: aWindow bounds.
+	^ windowStates at: aWindow put: aState

@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"align:" : "CT 6/1/2019 14:03",
+		"align:" : "CT 6/1/2019 14:48",
 		"align:positionFraction:extentFraction:" : "CT 5/27/2019 14:14",
 		"alignLastFourWindows" : "jh 8/3/2017 10:52",
 		"alignLastSixWindows" : "jh 8/3/2017 10:52",
@@ -10,11 +10,10 @@
 		"alignLastUsedWindows:" : "jh 8/3/2017 10:55",
 		"alignRegular:" : "CT 5/27/2019 14:09",
 		"findWindowToAlignIfEmpty:" : "CT 5/26/2019 22:20",
-		"initialize" : "jh 8/3/2017 11:01",
+		"initialize" : "CT 6/1/2019 14:55",
 		"trimWorldArea:" : "CT 5/26/2019 22:15",
 		"windowExtents" : "CT 5/26/2019 22:15",
 		"windowPositions" : "CT 5/26/2019 22:14",
-		"windowStateFor:ifAbsent:" : "CT 5/26/2019 22:25",
-		"windowStateFor:put:" : "CT 5/26/2019 22:27",
-		"windowStates" : "CT 5/26/2019 22:26",
+		"windowStateFor:ifAbsent:" : "CT 6/1/2019 15:01",
+		"windowStateFor:put:" : "CT 6/1/2019 14:55",
 		"windowsInCurrentSpace" : "jh 8/3/2017 13:15" } }

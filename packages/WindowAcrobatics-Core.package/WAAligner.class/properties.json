@@ -9,7 +9,8 @@
 		"lastWorldArea",
 		"windowExtents",
 		"windowPositions",
-		"windowStates" ],
+		"windowStates",
+		"lastBounds" ],
 	"name" : "WAAligner",
 	"pools" : [
 		 ],

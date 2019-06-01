@@ -8,3 +8,4 @@ align: aSymbol
 	nextState := state nextStateFor: aSymbol.
 	nextState applyToWindow: window for: self.
 	self windowStateFor: window put: nextState.
+	window beKeyWindow.

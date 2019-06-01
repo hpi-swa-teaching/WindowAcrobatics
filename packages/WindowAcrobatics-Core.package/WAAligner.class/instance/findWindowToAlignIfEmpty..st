@@ -1,6 +1,8 @@
 handling
 findWindowToAlignIfEmpty: aBlock
 
-	^ self windowsInCurrentSpace
-		ifEmpty: aBlock 
-		ifNotEmpty: [self windowsInCurrentSpace first]
+	^ (WAHandler alignFocusedWindow
+		ifFalse: [self windowsInCurrentSpace]
+		ifTrue: [SystemWindow windowsIn: ActiveWorld satisfying: #isLookingFocused])
+			ifEmpty: aBlock 
+			ifNotEmpty: [:windows | windows first]

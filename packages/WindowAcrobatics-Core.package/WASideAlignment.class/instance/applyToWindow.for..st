@@ -1,4 +1,4 @@
-as yet unclassified
+applying
 applyToWindow: aWindow for: anAligner
 
 	(#(left right) includes: self side)

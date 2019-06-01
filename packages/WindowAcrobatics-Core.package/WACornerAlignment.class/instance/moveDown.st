@@ -1,4 +1,4 @@
-as yet unclassified
+transitions
 moveDown
 
 	^ self class

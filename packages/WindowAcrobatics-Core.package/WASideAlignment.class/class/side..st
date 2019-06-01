@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 side: aSymbol
 
 	^ self new

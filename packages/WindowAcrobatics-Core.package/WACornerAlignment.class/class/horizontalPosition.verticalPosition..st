@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 horizontalPosition: aHorizontalPosition verticalPosition: aVerticalPosition
 
 	^ (alignments ifNil: [alignments := Dictionary new])

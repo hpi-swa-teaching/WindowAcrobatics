@@ -1,4 +1,4 @@
-as yet unclassified
+transitions
 nextStateFor: aSymbol
 
 	((self side = #left) and: [aSymbol = #right])

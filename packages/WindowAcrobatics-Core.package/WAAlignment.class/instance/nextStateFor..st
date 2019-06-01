@@ -1,4 +1,4 @@
-as yet unclassified
+transitions
 nextStateFor: aSymbol
 
 	^ WASideAlignment side: aSymbol

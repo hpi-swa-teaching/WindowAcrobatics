@@ -4,13 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jh 8/3/2017 11:11",
+	"commentStamp" : "",
 	"instvars" : [
-		"lastWorldArea",
-		"windowExtents",
-		"windowPositions",
-		"windowStates" ],
-	"name" : "WAAligner",
+		"state" ],
+	"name" : "WAAlignment",
 	"pools" : [
 		 ],
 	"super" : "Object",

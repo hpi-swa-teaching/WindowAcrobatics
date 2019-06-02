@@ -9,7 +9,7 @@
 		"grips",
 		"orientation",
 		"cursor" ],
-	"name" : "WACommonResizer",
+	"name" : "WACommonGripMorph",
 	"pools" : [
 		 ],
 	"super" : "CornerGripMorph",

@@ -19,4 +19,4 @@ mouseEnter: aGrip
 	relevantNeighbours ifEmpty: [^ self].
 
 	relevantNeighbours add: aGrip.
-	WACommonResizer openGripsFor: relevantNeighbours.
+	WACommonGripMorph openGripsFor: relevantNeighbours.

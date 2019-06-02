@@ -14,5 +14,5 @@ windowExtents
 		add: #verticalHalf -> (extent * (1 @ (1 / 2))) floor;
 		add: #horizontalHalf -> (extent * ((1 / 2) @ 1)) floor;
 		add: #quarter -> (extent // 2);
-		add: #sixth -> (extent * ((1 / 3) @ (1 / 2))) floor;
+		add: #sixth -> (extent * (1 / (2 @ 3))) floor;
 		yourself

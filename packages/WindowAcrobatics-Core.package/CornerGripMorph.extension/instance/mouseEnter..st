@@ -2,4 +2,4 @@
 mouseEnter: anEvent
 
 	super mouseEnter: anEvent.
-	WACommonGripMorph mouseEnter: self.
+	"WACommonGripMorph mouseEnter: self."

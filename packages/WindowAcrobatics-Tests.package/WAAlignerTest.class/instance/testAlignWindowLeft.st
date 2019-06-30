@@ -7,7 +7,5 @@ testAlignWindowLeft
 	
 	self
 		assertBoundsFor: window
-		left: 0
-		top: 18
-		width: World width / 2
-		height: World height - 18
+		left: 0 top: 18
+		width: World width / 2 height: World height - 18

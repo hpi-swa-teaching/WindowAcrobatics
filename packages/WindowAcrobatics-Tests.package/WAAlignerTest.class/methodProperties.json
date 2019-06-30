@@ -12,7 +12,14 @@
 		"testAlignTwoLastUsedWindows" : "CT 6/30/2019 14:31",
 		"testAlignWindowBottom" : "CT 6/30/2019 15:04",
 		"testAlignWindowBottomLeft" : "CT 6/30/2019 14:55",
+		"testAlignWindowBottomRight" : "CT 6/30/2019 15:11",
 		"testAlignWindowFull" : "CT 6/30/2019 14:54",
 		"testAlignWindowLeft" : "CT 6/30/2019 15:04",
+		"testAlignWindowLeftBottom" : "CT 6/30/2019 15:11",
+		"testAlignWindowLeftTop" : "CT 6/30/2019 15:11",
 		"testAlignWindowRight" : "CT 6/30/2019 14:53",
-		"testAlignWindowTop" : "CT 6/30/2019 14:52" } }
+		"testAlignWindowRightBottom" : "CT 6/30/2019 15:11",
+		"testAlignWindowRightTop" : "CT 6/30/2019 15:12",
+		"testAlignWindowTop" : "CT 6/30/2019 14:52",
+		"testAlignWindowTopLeft" : "CT 6/30/2019 15:12",
+		"testAlignWindowTopRight" : "CT 6/30/2019 15:12" } }

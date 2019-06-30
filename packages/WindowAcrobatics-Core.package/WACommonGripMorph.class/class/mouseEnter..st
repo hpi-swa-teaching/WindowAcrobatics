@@ -2,21 +2,23 @@ as yet unclassified
 mouseEnter: aGrip
 
 	| relevantNeighbours |
-	Sensor controlKeyPressed ifTrue: [^ self].
+	Sensor controlKeyPressed ifFalse: [^ self].
 	(aGrip isKindOf: self) ifTrue: [^ self].
 	
 	relevantNeighbours := OrderedCollection new.
-	CornerGripMorph allSubInstances do: [:anotherGrip |
-		(anotherGrip ~= aGrip
-			and: [(anotherGrip isKindOf: self) not]
-			and: [(aGrip isKindOf: BorderGripMorph) = (anotherGrip isKindOf: BorderGripMorph)]
-			and: [(aGrip isKindOf: BorderGripMorph) ==> [anotherGrip orientation = aGrip orientation]]
-			and: [anotherGrip world = aGrip world]
-			and: [(self gapBetween: aGrip and: anotherGrip) abs < self maxGap]
-			and: [(anotherGrip bounds corners collect: [:corner |
-				corner dist: (aGrip bounds pointNearestTo: corner)]) min < self maxDist])
-			ifTrue: [relevantNeighbours add: anotherGrip]].
+	CornerGripMorph allSubInstances
+		select: [:anotherGrip |
+			(anotherGrip ~= aGrip
+				and: [(anotherGrip isKindOf: self) not]
+				and: [anotherGrip world = aGrip world]
+				and: [(aGrip isKindOf: BorderGripMorph) = (anotherGrip isKindOf: BorderGripMorph)]
+				and: [(aGrip isKindOf: BorderGripMorph) ==> [anotherGrip orientation = aGrip orientation]]
+				and: [(self gapBetween: aGrip and: anotherGrip) abs < self maxGap]
+				and: [(anotherGrip bounds corners collect: [:corner |
+					corner dist: (aGrip bounds pointNearestTo: corner)]) min < self maxDist])]
+		thenDo: [:anotherGrip |
+			relevantNeighbours add: anotherGrip].
 	relevantNeighbours ifEmpty: [^ self].
 
 	relevantNeighbours add: aGrip.
-	WACommonGripMorph openGripsFor: relevantNeighbours.
+	self openGripsFor: relevantNeighbours.

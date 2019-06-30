@@ -1,9 +1,8 @@
-as yet unclassified
+testing
 testAlignWindowBottom
 	
 	|window|
 	
-	window := SystemWindow new openInWorld.
+	window := self openNewWindow.
 	WAAligner new align: #bottom.
 	self assert: (window width = World width) description: 'Window didnt align correctly (bottom).'.
-	window delete.

@@ -2,11 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAlignFourLastUsedWindows" : "jh 7/2/2017 12:20",
-		"testAlignSixLastUsedWindows" : "jh 7/2/2017 12:25",
-		"testAlignTwoLastUsedWindows" : "jh 7/2/2017 12:21",
-		"testAlignWindowBottom" : "jh 6/15/2017 13:42",
-		"testAlignWindowFull" : "jh 6/15/2017 13:43",
-		"testAlignWindowLeft" : "jh 6/15/2017 13:43",
-		"testAlignWindowRight" : "jh 6/15/2017 13:43",
-		"testAlignWindowTop" : "jh 6/15/2017 13:43" } }
+		"openNewWindow" : "CT 6/30/2019 14:32",
+		"performTest" : "CT 6/30/2019 14:28",
+		"setUp" : "CT 6/30/2019 14:21",
+		"tearDown" : "CT 6/30/2019 14:21",
+		"testAlignFourLastUsedWindows" : "CT 6/30/2019 14:24",
+		"testAlignSixLastUsedWindows" : "CT 6/30/2019 14:32",
+		"testAlignTwoLastUsedWindows" : "CT 6/30/2019 14:31",
+		"testAlignWindowBottom" : "CT 6/30/2019 14:31",
+		"testAlignWindowFull" : "CT 6/30/2019 14:31",
+		"testAlignWindowLeft" : "CT 6/30/2019 14:31",
+		"testAlignWindowRight" : "CT 6/30/2019 14:31",
+		"testAlignWindowTop" : "CT 6/30/2019 14:30" } }

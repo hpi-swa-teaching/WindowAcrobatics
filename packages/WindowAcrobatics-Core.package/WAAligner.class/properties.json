@@ -8,8 +8,7 @@
 	"instvars" : [
 		"lastWorldArea",
 		"windowExtents",
-		"windowPositions",
-		"lastBounds" ],
+		"windowPositions" ],
 	"name" : "WAAligner",
 	"pools" : [
 		 ],

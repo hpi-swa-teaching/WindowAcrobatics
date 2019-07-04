@@ -2,5 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acrobaticLoadBounds" : "CT 7/4/2019 15:42",
 		"acrobaticState" : "CT 7/4/2019 13:45",
-		"acrobaticState:" : "CT 7/4/2019 13:46" } }
+		"acrobaticState:" : "CT 7/4/2019 13:46",
+		"acrobaticStoreBounds" : "CT 7/4/2019 15:42",
+		"privateFullMoveBy:" : "CT 7/4/2019 15:44" } }

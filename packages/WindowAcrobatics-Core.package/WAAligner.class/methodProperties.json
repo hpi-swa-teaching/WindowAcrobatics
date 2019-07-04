@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"align:" : "CT 6/1/2019 15:49",
+		"align:" : "CT 7/4/2019 13:46",
 		"align:positionFraction:extentFraction:" : "CT 5/27/2019 14:14",
 		"alignLastFourWindows" : "jh 8/3/2017 10:52",
 		"alignLastSixWindows" : "jh 8/3/2017 10:52",
@@ -14,6 +14,4 @@
 		"trimWorldArea:" : "CT 5/26/2019 22:15",
 		"windowExtents" : "CT 6/2/2019 19:06",
 		"windowPositions" : "CT 5/26/2019 22:14",
-		"windowStateFor:ifAbsent:" : "CT 6/1/2019 15:01",
-		"windowStateFor:put:" : "CT 6/1/2019 14:55",
 		"windowsInCurrentSpace" : "jh 8/3/2017 13:15" } }

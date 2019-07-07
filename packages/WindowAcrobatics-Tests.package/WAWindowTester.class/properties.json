@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"windowTest",
-		"window" ],
-	"name" : "WAAlignerTest",
+		"windowHeap" ],
+	"name" : "WAWindowTester",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "Object",
 	"type" : "normal" }

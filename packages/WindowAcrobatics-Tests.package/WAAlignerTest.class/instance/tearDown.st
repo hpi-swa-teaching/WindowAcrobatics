@@ -1,4 +1,5 @@
 running
 tearDown
 
-	windowHeap do: #delete
+	windowTest tearDown.
+	super tearDown

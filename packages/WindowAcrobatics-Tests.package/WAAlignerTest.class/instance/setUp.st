@@ -2,4 +2,5 @@ running
 setUp
 
 	super setUp.
-	windowHeap := Set new
+	windowTest := WAWindowTester new.
+	window := windowTest openNewWindow

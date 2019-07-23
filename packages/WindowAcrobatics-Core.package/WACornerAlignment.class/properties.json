@@ -1,0 +1,15 @@
+{
+	"category" : "WindowAcrobatics-Core",
+	"classinstvars" : [
+		"alignments" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"horizontalPosition",
+		"verticalPosition" ],
+	"name" : "WACornerAlignment",
+	"pools" : [
+		 ],
+	"super" : "WAAlignment",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+*WindowAcrobatics-Core
+acrobaticState
+
+	^ acrobaticState

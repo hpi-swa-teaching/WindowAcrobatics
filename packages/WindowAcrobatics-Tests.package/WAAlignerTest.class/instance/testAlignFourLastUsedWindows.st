@@ -1,18 +1,14 @@
-as yet unclassified
+testing
 testAlignFourLastUsedWindows
 
 	|window1 window2 window3|
 	
-	window1 := SystemWindow new openInWorld.
-	window2 := SystemWindow new openInWorld.
-	window3 := SystemWindow new openInWorld.
+	window1 := windowTest openNewWindow.
+	window2 := windowTest openNewWindow.
+	window3 := windowTest openNewWindow.
 	
 	WAAligner new alignLastUsedWindows: 4.
 	
-	self assert: (window1 width = (World width / 2) asInteger) description: 'Width is incorrect'.
-	self assert: (window2 height = ((World height - 18) / 2) asInteger) description: 'Height is incorrect'.
-	self assert: (window3 position = (0 @ 18)) description: 'Order of windows is incorrect'.
-	
-	window1 delete.
-	window2 delete.
-	window3 delete.
+	self assert: window1 width near: World width / 2 description: 'Width is incorrect'.
+	self assert: window2 height near: World height - self dockingBarHeight / 2 description: 'Height is incorrect'.
+	self assert: window3 position near: 0 @ self dockingBarHeight description: 'Order of windows is incorrect'.

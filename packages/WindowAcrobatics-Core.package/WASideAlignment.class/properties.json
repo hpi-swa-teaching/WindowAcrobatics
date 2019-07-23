@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"side" ],
+	"name" : "WASideAlignment",
+	"pools" : [
+		 ],
+	"super" : "WAAlignment",
+	"type" : "normal" }

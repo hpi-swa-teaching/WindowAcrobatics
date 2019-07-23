@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"activateAlignFocusedWindow" : "CT 6/1/2019 16:01",
+		"activateAlignFocusedWindow:" : "CT 6/1/2019 16:03",
 		"activateAlignment" : "jh 6/8/2017 11:48",
 		"activateAlignment:" : "jh 8/3/2017 14:13",
 		"activateDashboard" : "jh 6/1/2017 16:10",
@@ -8,6 +10,8 @@
 		"activateSwitching:" : "jh 8/4/2017 10:43",
 		"alignBottomKey" : "jh 8/4/2017 10:36",
 		"alignBottomKey:" : "jh 8/4/2017 10:36",
+		"alignFocusedWindow" : "CT 6/1/2019 16:02",
+		"alignFocusedWindow:" : "CT 6/1/2019 16:03",
 		"alignFullKey" : "jh 8/4/2017 10:36",
 		"alignFullKey:" : "jh 8/4/2017 10:36",
 		"alignLastUsedWindows" : "jh 6/22/2017 10:40",
@@ -26,6 +30,7 @@
 		"cycleWindows:" : "jh 8/4/2017 10:39",
 		"dashboardActive" : "jh 6/8/2017 11:51",
 		"dashboardActive:" : "jh 6/1/2017 16:07",
+		"initialize" : "CT 6/1/2019 13:57",
 		"instance" : "jh 8/3/2017 13:55",
 		"instance:" : "jh 8/3/2017 13:55",
 		"keyToDescriptionBindingsAlignment" : "jh 8/4/2017 10:43",
@@ -55,9 +60,9 @@
 		"defaultKeybindingsAlignment" : "jh 8/4/2017 10:35",
 		"defaultKeybindingsDashboard" : "jh 8/4/2017 10:35",
 		"defaultKeybindingsSwitching" : "jh 8/4/2017 10:35",
-		"descriptionToActionBindings" : "CT 5/26/2019 19:11",
-		"filterEvent:for:" : "CT 5/26/2019 18:57",
-		"handle:" : "jh 8/4/2017 10:46",
+		"descriptionToActionBindings" : "CT 6/3/2019 08:41",
+		"filterEvent:for:" : "CT 6/3/2019 08:38",
+		"handle:" : "CT 5/31/2019 15:18",
 		"initialize" : "CT 5/26/2019 18:57",
 		"switcher" : "jh 8/3/2017 14:08",
 		"switcher:" : "jh 8/3/2017 14:07" } }

@@ -1,10 +1,18 @@
-defaults
+accessing
 windowExtents
 
-	^ Dictionary new
-		add: #full -> ((World extent x) @ (World extent y - self heightOfDockingBar));
-		add: #verticalHalf -> ((World extent x) @ ((World extent y - self heightOfDockingBar)  / 2) asInteger);
-		add: #horizontalHalf -> ((World extent x / 2) asInteger @ (World extent y - self heightOfDockingBar));
-		add: #quarter -> ((World extent x / 2) asInteger @ ((World extent y - self heightOfDockingBar) / 2) asInteger);
-		add: #sixth -> ((World extent x / 2) asInteger @ ((World extent y - self heightOfDockingBar) / 3) asInteger);
+	| area extent |
+	area := RealEstateAgent maximumUsableArea.
+	((area = lastWorldArea) and: windowExtents notNil)
+		ifTrue: [^ windowExtents].
+	
+	area := self trimWorldArea: area.
+	extent := area extent.
+	
+	^ lastWorldArea := Dictionary new
+		add: #full -> extent;
+		add: #verticalHalf -> (extent * (1 @ (1 / 2))) floor;
+		add: #horizontalHalf -> (extent * ((1 / 2) @ 1)) floor;
+		add: #quarter -> (extent // 2);
+		add: #sixth -> (extent * (1 / (2 @ 3))) floor;
 		yourself

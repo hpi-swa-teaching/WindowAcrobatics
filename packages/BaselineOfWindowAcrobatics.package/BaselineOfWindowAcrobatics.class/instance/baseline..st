@@ -1,4 +1,4 @@
-nil
+baseline
 baseline: spec
 	<baseline>
 	spec for: #'common' do: [
@@ -9,4 +9,6 @@ baseline: spec
 				package: 'WindowAcrobatics-Tests';
 
 				group: 'default' with: #('WindowAcrobatics-Core');
-				group: 'tests' with: #('default' 'WindowAcrobatics-Tests' 'Widgets')]
+				group: 'tests' with: #('default' 'WindowAcrobatics-Tests' 'Widgets')].
+	spec
+		postLoadDoIt: #postLoad.

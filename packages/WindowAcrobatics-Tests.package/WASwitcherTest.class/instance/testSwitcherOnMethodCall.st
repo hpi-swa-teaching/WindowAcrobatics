@@ -1,17 +1,12 @@
-as yet unclassified
+testing
 testSwitcherOnMethodCall
 
-	|firstWindow secondWindow activeWindow newActiveWindow|
-	
-	firstWindow := SystemWindow new openInWorld.
-	secondWindow := SystemWindow new openInWorld.
+	| firstWindow secondWindow activeWindow newActiveWindow |
+	firstWindow := windowTest openNewWindow.
+	secondWindow := windowTest openNewWindow.
 	activeWindow := ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]].
 	
 	WASwitcher new selectLastWindow.
 	
 	newActiveWindow := ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]].
-	
-	self assert: (newActiveWindow ~= activeWindow) description: 'switsching failed'.
-	
-	firstWindow delete.
-	secondWindow delete.
+	self deny: activeWindow equals: newActiveWindow.

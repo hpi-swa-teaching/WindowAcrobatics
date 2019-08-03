@@ -9,4 +9,4 @@ testSwitcherOnMethodCall
 	WASwitcher new selectLastWindow.
 	
 	newActiveWindow := ActiveWorld submorphs select: [:m | m isSystemWindow and: [m isLookingFocused]].
-	self deny: activeWindow equals: newActiveWindow.
+	self deny: newActiveWindow == activeWindow.

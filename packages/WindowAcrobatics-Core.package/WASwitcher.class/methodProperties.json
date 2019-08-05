@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"numberOfSpaces" : "ct 8/3/2019 21:33",
+		"numberOfSpaces:" : "ct 8/5/2019 15:29",
 		"spaceNumber" : "adz 6/15/2017 12:25",
 		"spaceNumber:" : "adz 6/15/2017 12:13" },
 	"instance" : {
@@ -8,7 +10,7 @@
 		"createSpaceVisualizations" : "jh 8/3/2017 12:09",
 		"cycleThroughTypes" : "jh 8/3/2017 11:35",
 		"decreaseSpaceNumber" : "jh 8/3/2017 21:55",
-		"extendedWorldBounds" : "ct 8/3/2019 20:45",
+		"extendedWorldBounds" : "ct 8/3/2019 21:28",
 		"handHasWindow" : "jh 8/3/2017 11:37",
 		"handOffset" : "jh 8/3/2017 11:50",
 		"handOverLeftBorder" : "jh 8/3/2017 11:50",
@@ -19,8 +21,7 @@
 		"moveWindowLeft:" : "jh 8/3/2017 11:53",
 		"moveWindowRight:" : "jh 8/3/2017 11:54",
 		"notInFirstSpace" : "jh 8/3/2017 21:55",
-		"notInLastSpace" : "jh 8/3/2017 21:55",
-		"numberOfSpaces" : "jh 8/3/2017 13:07",
+		"notInLastSpace" : "ct 8/3/2019 21:27",
 		"selectLastWindow" : "jh 8/3/2017 11:59",
 		"spaceToLeft" : "jh 8/3/2017 21:56",
 		"spaceToRight" : "jh 8/3/2017 21:56",

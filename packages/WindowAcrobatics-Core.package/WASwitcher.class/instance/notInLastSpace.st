@@ -1,4 +1,4 @@
 spaces
 notInLastSpace
 
-	^ self class spaceNumber ~= self numberOfSpaces
+	^ self class spaceNumber ~= self class numberOfSpaces

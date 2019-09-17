@@ -3,4 +3,4 @@ setUp
 
 	super setUp.
 	windowTest := WAWindowTester new.
-	window := windowTest openNewWindow
+	window := windowTest openNewWindow.

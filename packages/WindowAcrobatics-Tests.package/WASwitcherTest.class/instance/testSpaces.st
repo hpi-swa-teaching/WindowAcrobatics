@@ -1,16 +1,11 @@
-as yet unclassified
+testing
 testSpaces
 
-	|window|
+	| window |
+	window := windowTest openNewWindow.
 	
-	window := SystemWindow new openInWorld.
-
 	WASwitcher new spaceToRight.
-	
-	self assert: (((WAAligner new windowsInCurrentSpace) includes: window) not) description: 'Spaces failed.'.
+	self deny: (WAAligner new windowsInCurrentSpace includes: window).
 	
 	WASwitcher new spaceToLeft.
-	
-	self assert: ((WAAligner new windowsInCurrentSpace) includes: window) description: 'Spaces failed.'.
-	
-	window delete.
+	self assert: (WAAligner new windowsInCurrentSpace includes: window).

@@ -7,6 +7,6 @@ initialize: aNumber
 		color: self defaultColor;
 		setLayout.
 	
-	1 to: (self numberOfSpaces) do: [:n | n = aNumber ifTrue: [self addNumberToSign: n colored: Color white] ifFalse: [self addNumberToSign: n colored: Color gray]].
+	1 to: (WASwitcher numberOfSpaces) do: [:n | n = aNumber ifTrue: [self addNumberToSign: n colored: Color white] ifFalse: [self addNumberToSign: n colored: Color gray]].
 	
 	self openInWorld.

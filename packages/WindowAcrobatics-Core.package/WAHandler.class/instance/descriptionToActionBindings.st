@@ -12,5 +12,5 @@ descriptionToActionBindings
 		add: #cycle->[self switcher cycleThroughTypes];
 		add: #spaceLeft -> [self switcher spaceToLeft];
 		add: #spaceRight -> [self switcher spaceToRight];
-		add: #alignLastUsedWindows ->[self aligner alignLastUsedWindows: self numberOfLastWindows];
+		add: #alignLastUsedWindows ->[self aligner alignLastUsedWindows: self class numberOfLastWindows];
 		yourself.

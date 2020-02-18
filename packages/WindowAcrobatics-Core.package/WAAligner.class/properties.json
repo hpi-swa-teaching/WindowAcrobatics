@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "jh 8/3/2017 11:11",
 	"instvars" : [
-		 ],
+		"lastWorldArea",
+		"windowExtents",
+		"windowPositions" ],
 	"name" : "WAAligner",
 	"pools" : [
 		 ],

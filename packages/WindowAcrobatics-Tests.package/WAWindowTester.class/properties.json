@@ -1,0 +1,14 @@
+{
+	"category" : "WindowAcrobatics-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"windowHeap" ],
+	"name" : "WAWindowTester",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

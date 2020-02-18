@@ -1,9 +1,9 @@
-as yet unclassified
+testing
 testAlignWindowTop
 	
-	|window|
-	
-	window := SystemWindow new openInWorld.
 	WAAligner new align: #top.
-	self assert: (window position = (0@18)) description: 'Window didnt align correctly (top).'.
-	window delete.
+	
+	self
+		assertBoundsFor: window
+		left: 0 top: self dockingBarHeight
+		width: World width height: World height - self dockingBarHeight / 2

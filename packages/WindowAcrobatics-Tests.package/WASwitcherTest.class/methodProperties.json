@@ -2,5 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testSpaces" : "jh 8/3/2017 10:51",
-		"testSwitcherOnMethodCall" : "jh 6/15/2017 16:32" } }
+		"setUp" : "ct 8/3/2019 21:09",
+		"tearDown" : "ct 8/3/2019 21:10",
+		"testSpaces" : "ct 8/3/2019 21:10",
+		"testSpacesAreKeptOnFullRepaint" : "ct 8/3/2019 21:15",
+		"testSwitcherOnMethodCall" : "ct 8/3/2019 21:20" } }

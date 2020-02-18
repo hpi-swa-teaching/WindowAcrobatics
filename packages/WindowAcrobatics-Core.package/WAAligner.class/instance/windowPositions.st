@@ -1,13 +1,20 @@
-defaults
+accessing
 windowPositions
 
-	^ Dictionary new
-		add: #leftTop -> (0 @ self heightOfDockingBar);
-		add: #leftFirstThird -> (0 @ ((World extent y - self heightOfDockingBar) // 3 + self heightOfDockingBar));
-		add: #leftCenter -> (0 @ ((World extent y + self heightOfDockingBar) // 2));
-		add: #leftSecondThird -> (0 @ ((World extent y - self heightOfDockingBar) * 2 // 3 + self heightOfDockingBar));
-		add: #centerTop -> ((World extent x // 2) @ self heightOfDockingBar);
-		add: #centerFirstThird -> ((World extent x // 2) @ ((World extent y - self heightOfDockingBar) // 3 + self heightOfDockingBar));
-		add: #centerCenter -> ((World extent x // 2) @ ((World extent y / 2) + (self heightOfDockingBar // 2)));
-		add: #centerSecondThird -> ((World extent x // 2) @ ((World extent y - self heightOfDockingBar) * 2 // 3 + self heightOfDockingBar));
+	| area |
+	area := RealEstateAgent maximumUsableArea.
+	((area = lastWorldArea) and: windowPositions notNil)
+		ifTrue: [^ windowPositions].
+	
+	area := self trimWorldArea: area.
+	
+	^ windowPositions := Dictionary new
+		add: #leftTop -> area topLeft;
+		add: #leftFirstThird -> ((area topLeft * 2) + (area bottomLeft) // 3);
+		add: #leftCenter -> area leftCenter;
+		add: #leftSecondThird -> ((area topLeft) + (area bottomLeft * 2) // 3);
+		add: #centerTop -> area topCenter;
+		add: #centerFirstThird -> ((area topCenter * 2) + (area bottomCenter) // 3);
+		add: #centerCenter -> area center;
+		add: #centerSecondThird -> ((area topCenter) + (area bottomCenter * 2) // 3);
 		yourself 

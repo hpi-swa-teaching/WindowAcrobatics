@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"horizontalPosition:verticalPosition:" : "CT 5/27/2019 14:17" },
+	"instance" : {
+		"applyToWindow:for:" : "CT 5/31/2019 15:19",
+		"horizontalPosition" : "CT 5/26/2019 22:34",
+		"horizontalPosition:" : "CT 5/26/2019 22:34",
+		"moveDown" : "CT 5/26/2019 22:45",
+		"moveLeft" : "CT 5/26/2019 22:45",
+		"moveRight" : "CT 5/26/2019 22:45",
+		"moveUp" : "CT 5/26/2019 22:45",
+		"nextStateFor:" : "CT 6/1/2019 13:53",
+		"verticalPosition" : "CT 5/26/2019 22:34",
+		"verticalPosition:" : "CT 5/26/2019 22:34" } }

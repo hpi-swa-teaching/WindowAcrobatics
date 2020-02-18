@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AlignFocusedWindow",
 		"AlignmentActive",
 		"DashboardActive",
 		"Instance",

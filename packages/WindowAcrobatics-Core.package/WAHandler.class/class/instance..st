@@ -1,3 +1,3 @@
 accessing
-instance: anObject
-	Instance := anObject
+instance: aHandler
+	Instance := aHandler

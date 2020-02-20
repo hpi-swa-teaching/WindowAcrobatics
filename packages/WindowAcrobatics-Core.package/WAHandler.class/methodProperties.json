@@ -22,7 +22,7 @@
 		"defaultKeybindingsSwitching" : "ct 12/28/2019 21:39",
 		"initialize" : "CT 6/1/2019 13:57",
 		"instance" : "jh 8/3/2017 13:55",
-		"instance:" : "jh 8/3/2017 13:55",
+		"instance:" : "ct 12/28/2019 22:16",
 		"keyFromString:" : "ct 12/28/2019 21:25",
 		"keyToAlignBottom" : "ct 2/19/2020 11:45",
 		"keyToAlignBottom:" : "ct 2/19/2020 11:45",
@@ -67,6 +67,6 @@
 		"descriptionToActionBindings" : "ct 2/19/2020 11:16",
 		"filterEvent:for:" : "CT 6/3/2019 08:38",
 		"handle:" : "ct 2/4/2020 09:20",
-		"initialize" : "CT 5/26/2019 18:57",
+		"initialize" : "ct 12/27/2019 23:00",
 		"switcher" : "jh 8/3/2017 14:08",
 		"switcher:" : "jh 8/3/2017 14:07" } }

@@ -9,6 +9,6 @@ baseline: spec
 			package: 'WindowAcrobatics-Tests'.
 		spec
 			group: 'default' with: #('WindowAcrobatics-Core');
-			group: 'tests' with: #('default' 'WindowAcrobatics-Tests' 'Widgets')].
+			group: 'tests' with: #('default' 'WindowAcrobatics-Tests')].
 	spec
 		postLoadDoIt: #postLoad.

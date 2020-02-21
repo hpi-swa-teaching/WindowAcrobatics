@@ -15,7 +15,16 @@ Current components of Window Acrobatics include
   * A switching tool that lets you cycle over your windows and switch between different Spaces.
 
 ### Installation
-Simply drag and drop the newest *.sar* into your image.
+#### Stable release
+Simply download the newest *.sar* file from the releases section and drag it into your image.
+#### Latest version
+Do the following in a workspace:
+```smalltalk
+Metacello new
+	baseline: #WindowAcrobatics;
+	repository: 'github://hpi-swa-teaching/WindowAcrobatics/packages';
+	load.
+```
 You may need to activate WindowAcrobatics explicitly -- just follow the post-install instructions in your image!
 
 ### Usage

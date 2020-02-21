@@ -2,7 +2,8 @@ handling
 handle: aKeyboardEvent
 
 	| alignHandled dashboardHandled switchingHandled |
-	aKeyboardEvent isKeystroke ifFalse: [^ false].
+	(aKeyboardEvent isKeystroke and: [aKeyboardEvent commandKeyPressed])
+		ifFalse: [^ false].
 	
 	alignHandled := true.
 	dashboardHandled := true.

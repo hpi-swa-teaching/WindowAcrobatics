@@ -1,3 +1,0 @@
-preferences
-keyToDescriptionBindingsAlignment: anObject
-	KeyToDescriptionBindingsAlignment := anObject

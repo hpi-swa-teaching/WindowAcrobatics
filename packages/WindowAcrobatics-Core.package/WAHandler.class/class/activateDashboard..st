@@ -1,4 +1,4 @@
-preferences
-activateDashboard: aBool
-	
-	self dashboardActive:  (self dashboardActive not).
+preferences - components
+activateDashboard: aBoolean
+
+	DashboardActive := aBoolean

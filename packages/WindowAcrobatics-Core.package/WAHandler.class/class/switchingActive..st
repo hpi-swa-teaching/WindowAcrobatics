@@ -1,3 +1,3 @@
 preferences
-switchingActive: anObject
-	SwitchingActive := anObject
+switchingActive: aBoolean
+	SwitchingActive := aBoolean

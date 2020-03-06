@@ -1,4 +1,4 @@
-preferences
-activateSwitching: aBool
-	
-	self switchingActive:  (self switchingActive not).
+preferences - components
+activateSwitching: aBoolean
+
+	SwitchingActive := aBoolean

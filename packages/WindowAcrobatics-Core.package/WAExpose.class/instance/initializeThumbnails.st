@@ -3,9 +3,10 @@ initializeThumbnails
 
 	| windows thumbnails |
 	
-	WAHandler switchingActive ifTrue: [windows := self windowsInCurrentSpace] 
-								ifFalse: [windows := ActiveWorld submorphs select: [:m | m isSystemWindow]].
-								
+	windows := WAHandler activateSwitching
+		ifTrue: [self windowsInCurrentSpace] 
+		ifFalse: [ActiveWorld submorphs select: [:m | m isSystemWindow]].
+						
 	thumbnails := OrderedCollection new.
 	
 	windows do: [:wnd |
@@ -38,5 +39,4 @@ initializeThumbnails
 			self addThumbnailsToCurrentPage.
 			self selectWindow: (thumbnails size > 1
 			ifTrue: [self thumbnailsOnPage second]
-			ifFalse: [self thumbnailsOnPage first])].
-		
+			ifFalse: [self thumbnailsOnPage first])].	

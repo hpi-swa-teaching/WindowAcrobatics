@@ -1,8 +1,9 @@
 initializing
 reset
 
-	self keyToDescriptionBindingsSwitching: nil.
-	self keyToDescriptionBindingsDashboard: nil.
-	self keyToDescriptionBindingsAlignment: nil.
-	self instance switcher delete.
-	self instance switcher: nil.
+	KeyToDescriptionBindingsSwitching := nil.
+	KeyToDescriptionBindingsDashboard := nil.
+	KeyToDescriptionBindingsAlignment := nil.
+	self instance ifNotNil: [:instance |
+		self instance switcher delete.
+		self instance switcher: nil].

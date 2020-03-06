@@ -1,4 +1,4 @@
-preferences
-activateAlignment: aBool
-	
-	self alignmentActive: (self alignmentActive not).
+preferences - components
+activateAlignment: aBoolean
+
+	AlignmentActive := aBoolean
